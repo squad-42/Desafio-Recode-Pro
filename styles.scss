@@ -9,6 +9,13 @@ $branco: hsl(0, 0%, 100%);
 $preto: hsl(0, 0%, 0%);
 $h2-font: hsla(0, 0%, 0%, 80%);
 
+/* MAP DAS CORES */
+
+$cores: (
+  "azul-escuro": $azul-escuro,
+  "azul": $azul,
+  "azul-claro": $azul-claro,
+);
 
 /* FONTE */
 $ff-raleway: 'Raleway', sans-serif;
