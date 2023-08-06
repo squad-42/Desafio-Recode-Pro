@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;900&display=swap');
+
+
+/* CORES */
+$azul-escuro: hsl(227, 64%, 14%);
+$azul: hsl(227, 65%, 28%);
+$azul-claro: hsl(226, 100%, 91%);
+$branco: hsl(0, 0%, 100%);
+$preto: hsl(0, 0%, 0%);
+$h2-font: hsla(0, 0%, 0%, 80%);
+
+
+/* FONTE */
+$ff-raleway: 'Raleway', sans-serif;
+
+
+/* PESO DA FONTE */
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+$fw-900: 900;
+
+
+/* TAMANHO DA FONT */
+$fs-10: 1rem;
+$fs-12: 1.2rem;
+$fs-14: 1.4rem;
+$fs-16: 1.6rem;
+$fs-20: 2rem;
+$fs-32: 3.2rem;
+$fs-36: 3.6rem;
+
+
+:root {
+  /* 1rem = 10px */
+
+  font-size: 62.5%;
+  font-family: $ff-raleway;
+}
