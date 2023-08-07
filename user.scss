@@ -48,6 +48,25 @@ $fs-36: 3.6rem;
 
 * {
   font-size: $fs-12  !important;
+
+}
+
+#user-bio {
+  color: $azul-escuro ;
+
+  #user-picture {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  p {
+    margin: 0;
+    font-size: $fs-10  !important;
+  }
+
+
 }
 
 
