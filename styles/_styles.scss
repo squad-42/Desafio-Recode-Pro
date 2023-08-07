@@ -40,7 +40,25 @@ $fs-36: 3.6rem;
 
 :root {
   /* 1rem = 10px */
-
-  font-size: 62.5%;
+  font-size: 62.5% !important;
   font-family: $ff-raleway;
+}
+
+* {
+  font-size: $fs-16  !important;
+}
+
+@each $cor,
+$valor in $cores {
+  .btn-#{$cor} {
+    background-color: $valor;
+    color: $branco;
+
+    &:hover {
+      background-color: $branco;
+      border-color: $valor;
+      color: $valor;
+    }
+  }
+
 }
