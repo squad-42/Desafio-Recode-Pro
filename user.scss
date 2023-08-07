@@ -51,7 +51,6 @@ $fs-36: 3.6rem;
 }
 
 
-
 @each $cor,
 $valor in $cores {
   .btn-#{$cor} {
