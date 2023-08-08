@@ -42,4 +42,36 @@
   background-color: hsl(0deg, 0%, 100%);
   border-color: hsl(227deg, 100%, 91%);
   color: hsl(227deg, 100%, 91%);
+}
+
+.btn-verde {
+  background-color: rgb(26, 245, 6);
+  color: hsl(0deg, 0%, 100%);
+}
+.btn-verde:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  border-color: rgb(26, 245, 6);
+  color: rgb(26, 245, 6);
+}
+
+h1 {
+  font-size: 2rem !important;
+  color: hsl(227deg, 65%, 28%);
+}
+
+p {
+  color: red;
+  font-weight: bold;
+  font-size: 50px !important;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  font-size: 25px !important;
+  font-weight: bold;
+}
+ul li:hover {
+  color: hsl(227deg, 100%, 91%);
 }/*# sourceMappingURL=david.css.map */

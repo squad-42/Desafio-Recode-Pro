@@ -4,6 +4,7 @@
 /* CORES */
 
 $azul-escuro: hsl(227, 64%, 14%);
+$verde: rgb(26, 245, 6);
 $azul: hsl(227, 65%, 28%);
 $azul-claro: hsl(227, 100%, 91%);
 $branco: hsl(0, 0%, 100%);
@@ -16,6 +17,7 @@ $cores: (
   "azul-escuro": $azul-escuro,
   "azul": $azul,
   "azul-claro": $azul-claro,
+  "verde": $verde,
 );
 
 
