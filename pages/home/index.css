@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;900&display=swap");
+/* CORES */
+/* MAP  DAS CORES */
+/* FONTE */
+/* PESO DA FONTE */
+/* TAMANHO DA FONT */
+:root {
+  /* 1rem = 10px */
+  font-size: 62.5% !important;
+  font-family: "Raleway", sans-serif;
+}
+
+* {
+  font-size: 1.6rem !important;
+}
+
+.btn-azul-escuro {
+  background-color: hsl(227deg, 64%, 14%);
+  color: hsl(0deg, 0%, 100%);
+}
+.btn-azul-escuro:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  border-color: hsl(227deg, 64%, 14%);
+  color: hsl(227deg, 64%, 14%);
+}
+
+.bg-azul-escuro {
+  background-color: hsl(227deg, 64%, 14%);
+}
+
+.btn-azul {
+  background-color: hsl(227deg, 65%, 28%);
+  color: hsl(0deg, 0%, 100%);
+}
+.btn-azul:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  border-color: hsl(227deg, 65%, 28%);
+  color: hsl(227deg, 65%, 28%);
+}
+
+.bg-azul {
+  background-color: hsl(227deg, 65%, 28%);
+}
+
+.btn-azul-claro {
+  background-color: hsl(227deg, 100%, 91%);
+  color: hsl(0deg, 0%, 100%);
+}
+.btn-azul-claro:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  border-color: hsl(227deg, 100%, 91%);
+  color: hsl(227deg, 100%, 91%);
+}
+
+.bg-azul-claro {
+  background-color: hsl(227deg, 100%, 91%);
+}
+
+body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(226deg, 100%, 91%);
+}
+
+.hero-title {
+  font-weight: bold;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 3.2rem !important;
+  text-align: center;
+  text-shadow: 2px 2px 4px hsl(0deg, 0%, 0%);
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.gif {
+  text-align: center;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Estilos personalizados para os efeitos js*/
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
+main.hidden {
+  display: nome;
+}
+
+.zoom-in {
+  -webkit-animation: zoomInAnimation 2s ease;
+          animation: zoomInAnimation 2s ease;
+}
+
+.gif img {
+  -webkit-animation: zoomInAnimation 5s ease;
+          animation: zoomInAnimation 5s ease;
+}
+
+@-webkit-keyframes zoomInAnimation {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomInAnimation {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=index.css.map */
