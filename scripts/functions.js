@@ -1,8 +1,8 @@
 // Função para alternar o tema
 function alternarTema(tema) {
   const body = document.body;
-  const navbar = document.querySelector('.navbar');
-  const footer = document.querySelector('.footer');
+  const navbar = body.querySelector('.navbar');
+  const footer = body.querySelector('.footer');
   if (tema === 'claro') {
     body.classList.remove('theme-dark'); // Remover a classe do tema dark do body
     navbar.setAttribute('class', 'navbar navbar-expand-lg navbar-light bg-light'); // Altera a classe da navegação para o tema claro

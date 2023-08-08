@@ -2,30 +2,31 @@
 
 
 body {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  background-color: hsl(226, 100%, 91%);
+  background-color: $azul-claro;
 }
 
+
 .hero-title {
-  font-weight: bold;
+  font-weight: $fw-600;
   color: $branco;
   font-size: $fs-32  !important;
   text-align: center;
   text-shadow: 2px 2px 4px $preto;
-  margin-bottom: 2%;
-  margin-top: 2%;
+  margin-block: 2%;
 }
 
 .gif {
   text-align: center;
+
+  img {
+    max-width: 100% !important;
+  }
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
   padding: 10px;
   text-align: center;
   width: 100%;
