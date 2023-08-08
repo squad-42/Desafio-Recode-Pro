@@ -2,14 +2,25 @@
 
 
 /* CORES */
+<<<<<<< HEAD
 $azul-escuro: hsl(227, 64%, 14%);
 $azul: hsl(227, 65%, 28%);
 $azul-claro: hsl(226, 100%, 91%);
+=======
+
+$azul-escuro: hsl(227, 64%, 14%);
+$azul: hsl(227, 65%, 28%);
+$azul-claro: hsl(227, 100%, 91%);
+>>>>>>> home
 $branco: hsl(0, 0%, 100%);
 $preto: hsl(0, 0%, 0%);
 $h2-font: hsla(0, 0%, 0%, 80%);
 
+<<<<<<< HEAD
 /* MAP DAS CORES */
+=======
+/* MAP  DAS CORES */
+>>>>>>> home
 
 $cores: (
   "azul-escuro": $azul-escuro,
@@ -17,6 +28,10 @@ $cores: (
   "azul-claro": $azul-claro,
 );
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> home
 /* FONTE */
 $ff-raleway: 'Raleway', sans-serif;
 

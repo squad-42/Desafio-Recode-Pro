@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;900&display=swap");
+/* CORES */
+/* MAP  DAS CORES */
+/* FONTE */
+/* PESO DA FONTE */
+/* TAMANHO DA FONT */
+:root {
+  /* 1rem = 10px */
+  font-size: 62.5% !important;
+  font-family: "Raleway", sans-serif;
+}
+
+* {
+  font-size: 1.6rem !important;
+}
+
+.btn-azul-escuro {
+  background-color: hsl(227deg, 64%, 14%);
+  color: hsl(0deg, 0%, 100%);
+}
+.btn-azul-escuro:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  border-color: hsl(227deg, 64%, 14%);
+  color: hsl(227deg, 64%, 14%);
+}
+
+.btn-azul {
+  background-color: hsl(227deg, 65%, 28%);
+  color: hsl(0deg, 0%, 100%);
+}
+.btn-azul:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  border-color: hsl(227deg, 65%, 28%);
+  color: hsl(227deg, 65%, 28%);
+}
+
+.btn-azul-claro {
+  background-color: hsl(227deg, 100%, 91%);
+  color: hsl(0deg, 0%, 100%);
+}
+.btn-azul-claro:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  border-color: hsl(227deg, 100%, 91%);
+  color: hsl(227deg, 100%, 91%);
+}
+
+#login,
+#password {
+  border: 1px hsl(227deg, 64%, 14%) solid;
+  padding-inline: 10px;
+  border-radius: 20px;
+  max-width: 700px;
+}
+#login .input-icon,
+#password .input-icon {
+  color: hsl(227deg, 64%, 14%);
+}
+#login .form-control,
+#password .form-control {
+  border: none;
+}
+#login .form-control:focus-visible,
+#password .form-control:focus-visible {
+  box-shadow: 0 0 0 0;
+  outline: none !important;
+}/*# sourceMappingURL=login.css.map */
