@@ -42,14 +42,4 @@
   background-color: hsl(0deg, 0%, 100%);
   border-color: hsl(227deg, 100%, 91%);
   color: hsl(227deg, 100%, 91%);
-}
-
-.btn-verde {
-  background-color: rgb(26, 245, 6);
-  color: hsl(0deg, 0%, 100%);
-}
-.btn-verde:hover {
-  background-color: hsl(0deg, 0%, 100%);
-  border-color: rgb(26, 245, 6);
-  color: rgb(26, 245, 6);
 }/*# sourceMappingURL=aulas.css.map */
