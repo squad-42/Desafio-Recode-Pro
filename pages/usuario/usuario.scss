@@ -1,0 +1,46 @@
+@import "../../styles/styles";
+
+#user-bio {
+  color: $azul-escuro ;
+
+  #user-picture {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+
+    border-radius: 50%;
+  }
+
+  p {
+    margin: 0;
+    font-size: $fs-16  !important;
+  }
+
+
+}
+
+
+#user-cards {
+  color: $branco;
+
+  .card-description {
+    flex-grow: 4;
+
+    h3 {
+      font-size: $fs-16  !important;
+      font-weight: $fw-400;
+    }
+
+    .professor {
+      font-size: $fs-12  !important;
+    }
+  }
+
+  .lesson-card:nth-child(odd) {
+    background-color: $azul-escuro;
+  }
+
+  .lesson-card:nth-child(even) {
+    background-color: $azul;
+  }
+}
