@@ -61,6 +61,10 @@ $valor in $cores {
       border-color: $valor;
       color: $valor;
     }
+
   }
 
+  .bg-#{$cor} {
+    background-color: $valor;
+  }
 }
