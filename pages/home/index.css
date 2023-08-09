@@ -57,30 +57,29 @@
 }
 
 body {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  background-color: hsl(226deg, 100%, 91%);
+  background-color: hsl(227deg, 100%, 91%);
 }
 
 .hero-title {
-  font-weight: bold;
+  font-weight: 600;
   color: hsl(0deg, 0%, 100%);
   font-size: 3.2rem !important;
   text-align: center;
   text-shadow: 2px 2px 4px hsl(0deg, 0%, 0%);
-  margin-bottom: 2%;
-  margin-top: 2%;
+  margin-block: 2%;
 }
 
 .gif {
   text-align: center;
 }
+.gif img {
+  max-width: 100% !important;
+}
 
 footer {
+  position: absolute;
+  bottom: 0;
   padding: 10px;
   text-align: center;
   width: 100%;
