@@ -1,3 +1,32 @@
+export const navbarLinks = [
+  {
+    icone: "",
+    link: "index",
+    texto: "home"
+  },
+  {
+    icone: "",
+    link: "aulas",
+    texto: "aulas"
+  },
+  {
+    icone: "",
+    link: "cursos",
+    texto: "cursos"
+  },
+  {
+    icone: "",
+    link: "info",
+    texto: "info"
+  },
+  {
+    icone: "",
+    link: "usuario",
+    texto: "usuario"
+  },
+]
+
+
 export const materias = [
   {
     classe: "Verbo to be",

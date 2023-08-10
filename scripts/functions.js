@@ -1,3 +1,7 @@
+import { navbarLinks } from "./data.js";
+
+
+
 // Função para alternar o tema
 function alternarTema(tema) {
   const body = document.body;
@@ -30,5 +34,60 @@ export const trocarTemasBtn = () => {
   document.getElementById('btnEscuro').addEventListener('click', function () {
     alternarTema('escuro');
   });
+}
 
+
+
+/* NAVBAR */
+
+export const navbar = () => {
+  const header = document.querySelector("header")
+  header.innerHTML = `
+   <nav class="navbar navbar-expand-md navbar-primary bg-primary">
+      <div class="container">
+        <div>
+          <a class="navbar-brand" href="./index.html">
+            <img src="../../assets/icons/logo.svg" alt="Logotipo" width="50">
+          </a>
+          <div class="btn-group mx-2" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnClaro" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="btnClaro">
+              <img src="../../assets/icons/sun.svg" />
+            </label>
+            <input type="radio" class="btn-check" name="btnradio" id="btnEscuro" autocomplete="off" checked>
+            <label class="btn btn-outline-secondary" for="btnEscuro">
+              <img src="../../assets/icons/moon.svg" />
+            </label>
+          </div>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-start"
+          aria-controls="offcanvasTop">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-start bg-primary " tabindex="-1" id="offcanvas-start"
+          aria-labelledby="offcanvasTopLabel">
+          <div class="container">
+            <div class="offcanvas-header">
+              <a class="navbar-brand" id="logo-mobile" href="./index.html">
+                <img src="../../assets/icons/Logo.svg" alt="Daviagens logo" width="50">
+              </a>
+
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+            </div>
+            <ul class="navbar-nav text-uppercase mx-auto d-flex justify-content-end">
+            </ul>
+            </div>
+            </nav>
+            `
+
+  const navbarNav = document.querySelector(".navbar-nav")
+  navbarLinks.map(({ link, texto }) => {
+    navbarNav.innerHTML += `
+          <li class="nav-item  fs-4">
+            <a class="nav-link" aria-current="page" href="../${link}/${link}.html" >${texto}</a>
+          </li>`
+  })
 }

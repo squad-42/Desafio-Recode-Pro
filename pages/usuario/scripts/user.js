@@ -1,6 +1,9 @@
 import { materias } from "../../../scripts/data.js"
+import { navbar } from "../../../scripts/functions.js"
 
 const userCards = document.querySelector("#user-cards")
+
+navbar()
 
 const card = (classe, professor) => {
   return `<div class="w-100 d-flex lesson-card p-3">
