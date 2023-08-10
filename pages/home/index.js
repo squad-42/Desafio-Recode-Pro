@@ -1,4 +1,6 @@
-import { trocarTemasBtn } from "../../scripts/functions.js";
+import { navbar, trocarTemasBtn } from "../../scripts/functions.js";
+
+navbar()
 trocarTemasBtn()
 
 document.addEventListener("DOMContentLoaded", function () {
