@@ -61,12 +61,12 @@ export const navbar = () => {
           </div>
         </div>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-start"
           aria-controls="offcanvasTop">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="offcanvas offcanvas-top bg-primary " tabindex="-1" id="offcanvasTop"
+        <div class="offcanvas offcanvas-start bg-primary " tabindex="-1" id="offcanvas-start"
           aria-labelledby="offcanvasTopLabel">
           <div class="container">
             <div class="offcanvas-header">
@@ -84,10 +84,10 @@ export const navbar = () => {
             `
 
   const navbarNav = document.querySelector(".navbar-nav")
-  navbarLinks.map(({ link }) => {
+  navbarLinks.map(({ link, texto }) => {
     navbarNav.innerHTML += `
           <li class="nav-item  fs-4">
-            <a class="nav-link" aria-current="page" href="../${link === "index" ? "home" : link}/${link}.html" >${link}</a>
+            <a class="nav-link" aria-current="page" href="../${link}/${link}.html" >${texto}</a>
           </li>`
   })
 }

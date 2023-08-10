@@ -1,23 +1,28 @@
 export const navbarLinks = [
   {
-    icon: "",
-    link: "index"
+    icone: "",
+    link: "index",
+    texto: "home"
   },
   {
-    icon: "",
-    link: "aulas"
+    icone: "",
+    link: "aulas",
+    texto: "aulas"
   },
   {
-    icon: "",
-    link: "cursos"
+    icone: "",
+    link: "cursos",
+    texto: "cursos"
   },
   {
-    icon: "",
-    link: "info"
+    icone: "",
+    link: "info",
+    texto: "info"
   },
   {
-    icon: "",
-    link: "usuario"
+    icone: "",
+    link: "usuario",
+    texto: "usuario"
   },
 ]
 
