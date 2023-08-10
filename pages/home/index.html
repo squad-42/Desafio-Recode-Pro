@@ -11,50 +11,123 @@
   <link rel="stylesheet" href="./index.css">
 </head>
 
-<body class="">
-  <header>
-    <nav class="navbar navbar-expand-md navbar-primary bg-primary">
-      <div class="container">
-        <a class="navbar-brand" href="./index.html">
-          <img src="../../assets/icons/logo.svg" alt="Logotipo" width="50">
-        </a>
-        <div class="btn-group mx-2" role="group" aria-label="Basic radio toggle button group">
-          <input type="radio" class="btn-check" name="btnradio" id="btnClaro" autocomplete="off">
-          <label class="btn btn-outline-secondary" for="btnClaro">
-            <img src="../../assets/icons/sun.svg" />
+<body>
+   <header class="header">
+   
+      <section class="flex">
+   
+         <a href="index.html" class="logo">Inglês Transforma</a>
+         <img src="../../assets/icons/logo.svg" alt="Logotipo" width="80">
+   
+         <form action="search.html" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="pesquisar cursos..." maxlength="100">
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+   
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
+         </div>
+   
+         <div class="profile">
+            <img src="/assets/imgs/pic-1.jpg" class="image" alt="">
+            <h3 class="name">Pedro Pettigrew</h3>
+            <p class="role">Aluno</p>
+            <a href="profile.html" class="btn">Ver perfil</a>
+            <div class="flex-btn">
+               <a href="login.html" class="option-btn">login</a>
+               <a href="register.html" class="option-btn">registro</a>
+            </div>
+         </div>
+   
+      </section>
+   
+   </header>   
+      
+   <section class="home-grid">
 
-          </label>
-          <input type="radio" class="btn-check" name="btnradio" id="btnEscuro" autocomplete="off">
-          <label class="btn btn-outline-secondary" for="btnEscuro">
-
-            <img src="../../assets/icons/moon.svg" />
-          </label>
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contato.html">Contato</a>
-            </li>
-          </ul>
-        </div>
+      <div class="side-bar">
+   
+         <div id="close-btn">
+            <i class="fas fa-times"></i>
+         </div>
+      
+         <div class="profile">
+            <img src="/assets/imgs/pic-1.jpg" class="image" alt="">
+            <h3 class="name">Pedro Pettigrew</h3>
+            <p class="role">Aluno</p>
+            <a href="profile.html" class="btn">Ver perfil</a>
+         </div>
+      
+         <nav class="navbar">
+            <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="about.html"><i class="fas fa-question"></i><span>Sobre</span></a>
+            <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Cursos</span></a>
+            <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Professores</span></a>
+            <a href="contact.html"><i class="fas fa-headset"></i><span>Contato</span></a>
+         </nav>
+      
       </div>
-    </nav>
-  </header>
-  <main>
-    <div class="container hero text-center">
-      <h1 class="hero-title hidden">Bem-vindo</h1>
-    </div>
- 
- </section>
- 
- 
+      
+      <div class="box-container">
+         <h1 class="heading">Bem-vindx!</h1>
+      </div>
+      <div class="gif">
+         <img src="../../assets/imgs/online.gif" alt="GIF Animado" width="90%">
+      </div>
+       
+   
+      <h1 class="heading">Opções Rápidas</h1>
+   
+      <div class="box-container">
+   
+         <div class="box">
+            <h3 class="title">curtidas e comentários</h3>
+            <p class="likes">total de curtidas : <span>25</span></p>
+            <a href="#" class="inline-btn">ver curtidas</a>
+            <p class="likes">total comentários : <span>12</span></p>
+            <a href="#" class="inline-btn">ver comentários</a>
+            <p class="likes">salvar playlists: <span>4</span></p>
+            <a href="#" class="inline-btn">ver playlists</a>
+         </div>
+   
+         <div class="box">
+            <h3 class="title">Categorias em alta</h3>
+            <div class="flex">
+               <a href="#"><i class="fas fa-code"></i><span>gramática</span></a>
+               <a href="#"><i class="fas fa-chart-simple"></i><span>sintaxe</span></a>
+               <a href="#"><i class="fas fa-pen"></i><span>vocabulário</span></a>
+               <a href="#"><i class="fas fa-chart-line"></i><span>compreensão</span></a>
+               <a href="#"><i class="fas fa-music"></i><span>expressão oral</span></a>
+            </div>
+         </div>
+   
+         <div class="box">
+            <h3 class="title">Tópicos Populares</h3>
+            <div class="flex">
+               <a href="#"><i class="fas fa-pencil"></i><span>verb tenses</span></a>
+               <a href="#"><i class="fas fa-pencil-square"></i><span>verb moodes</span></a>
+               <a href="#"><i class="fas fa-user"></i><span>pronouns</span></a>
+               <a href="#"><i class="fas fa-users"></i><span>conjugation</span></a>
+               <a href="#"><i class="fas fa-file-text"></i><span>articles</span></a>
+               <a href="#"><i class="fas fa-child"></i><span>adjectives</span></a>
+            </div>
+         </div>
+   
+         <div class="box">
+            <h3 class="title">Torne-se um tutor</h3>
+            <p class="tutor">Você é apaixonado pelo inglês e deseja fazer a diferença 
+               na vida de outras pessoas? Torne-se um tutor e ajude outros na comunicação em inglês.</p>
+            <a href="teachers.html" class="inline-btn">Iniciar</a>
+         </div>
+   
+      </div>
+   
+   </section>
+   
+   
  
  <section class="courses">
  
@@ -106,7 +179,7 @@
              <img src="/assets/imgs/thumb-3.png" alt="">
              <span>10 vídeos</span>
           </div>
-          <h3 class="title">Preparação para Exames de Proficiência</h3>
+          <h3 class="title">Preparação - Exames de Proficiência</h3>
           <a href="playlist.html" class="inline-btn">ver playslist</a>
        </div>
  
@@ -168,6 +241,7 @@
  <footer class="footer">
     &copy; copyright @ 2023 por <span>Squad 42</span> | Todos os direitos reservados!
  </footer>
+ <script src="./index.js" type="module"></script>
  <script src="../home/index.js"></script>   
  </body>
  </html>
