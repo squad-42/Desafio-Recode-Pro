@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
+.btn-dark-blue {
+  background-color: hsl(227deg, 64%, 14%);
+  color: hsl(0deg, 0%, 100%);
+}
+.btn-dark-blue:hover {
+  border: 1px solid hsl(227deg, 64%, 14%);
+  color: hsl(227deg, 64%, 14%);
+  background-color: transparent;
+}
+
+.btn-red {
+  background-color: hsl(6deg, 78%, 57%);
+  color: hsl(0deg, 0%, 100%);
+}
+.btn-red:hover {
+  border: 1px solid hsl(6deg, 78%, 57%);
+  color: hsl(6deg, 78%, 57%);
+  background-color: transparent;
+}
+
+.btn-orange {
+  background-color: hsl(37deg, 90%, 51%);
+  color: hsl(0deg, 0%, 100%);
+}
+.btn-orange:hover {
+  border: 1px solid hsl(37deg, 90%, 51%);
+  color: hsl(37deg, 90%, 51%);
+  background-color: transparent;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+}
+*::-moz-selection {
+  background-color: hsl(227deg, 64%, 14%);
+  color: hsl(0deg, 0%, 100%);
+}
+*::selection {
+  background-color: hsl(227deg, 64%, 14%);
+  color: hsl(0deg, 0%, 100%);
+}
+*::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 1rem;
+}
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: hsl(227deg, 64%, 14%);
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5% !important;
+  width: 100vw !important;
+}
+
+body {
+  background-color: hsl(227deg, 100%, 91%);
+}
+
+section {
+  max-width: 1200px !important;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.btn,
+.option-btn,
+.delete-btn,
+.inline-btn,
+.inline-option-btn,
+.inline-delete-btn {
+  border-radius: 0.5rem !important;
+  padding: 1rem 3rem !important;
+  font-size: 1.8rem !important;
+  text-transform: capitalize !important;
+  transition: 0.2s ease-out !important;
+}
+
+.btn,
+.option-btn,
+.delete-btn {
+  display: block;
+  width: 100%;
+}
+
+.inline-btn,
+.inline-option-btn,
+.inline-delete-btn {
+  display: inline-block;
+}
+
+/* HEADER */
+header {
+  background-color: hsl(0deg, 0%, 100%);
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  z-index: 500;
+}
+header .section-header {
+  padding: 1.5rem 2rem;
+}
+header .logo {
+  font-size: 2.5rem;
+  color: hsl(210deg, 29%, 24%);
+  font-weight: bolder;
+}
+header .search-form {
+  width: 50rem;
+  border-radius: 0.5rem;
+  gap: 2rem;
+  background-color: hsl(227deg, 100%, 91%);
+  padding: 1.5rem 2rem;
+}
+header .search-form input {
+  width: 100%;
+  background: none;
+  font-size: 1.8rem;
+  color: hsl(210deg, 29%, 24%);
+}
+header .search-form button {
+  font-size: 2rem;
+  color: hsl(210deg, 29%, 24%);
+  cursor: pointer;
+  background: none;
+  transition: 0.2s ease-out;
+}
+header .search-form button:hover {
+  color: hsl(227deg, 64%, 14%);
+}
+header .icons div {
+  font-size: 2rem;
+  color: hsl(210deg, 29%, 24%);
+  border-radius: 0.5rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.4rem;
+  background-color: hsl(227deg, 100%, 91%);
+  text-align: center;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+header .icons div:hover {
+  background-color: hsl(210deg, 29%, 24%);
+  color: hsl(0deg, 0%, 100%);
+}
+header #search-btn {
+  display: none;
+}
+header .profile {
+  top: 120%;
+  right: 2rem;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  width: 30rem;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: 0.2s linear;
+}
+header .profile.active {
+  transform: scale(1);
+}
+header .profile img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+header .profile h3 {
+  font-size: 2rem;
+  color: hsl(210deg, 29%, 24%);
+}
+header .profile p {
+  font-size: 1.6rem;
+  color: #888;
+}
+@media (max-width: 991px) {
+  header html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 777px) {
+  header #search-btn {
+    display: inline-block;
+  }
+  header .search-form {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    width: auto;
+    border-block: 0.1rem solid rgba(0, 0, 0, 0.2);
+    background-color: hsl(0deg, 0%, 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.2s linear;
+  }
+  header .search-form.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+/* SIDEBAR */
+#sidebar .profile {
+  padding: 3rem 2rem;
+}
+#sidebar .profile img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+#sidebar .profile h3 {
+  font-size: 2rem;
+  color: hsl(210deg, 29%, 24%);
+}
+#sidebar .profile p {
+  font-size: 1.6rem;
+  color: #888;
+}
+#sidebar .navbar {
+  margin-top: 1rem;
+}
+#sidebar .navbar a {
+  display: block;
+  padding: 1.5rem 2.5rem;
+  width: 100%;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  font-size: 1.8rem;
+}
+#sidebar .navbar a i {
+  color: hsl(227deg, 64%, 14%);
+  margin-right: 1.5rem;
+  transition: 0.2s ease-out;
+}
+#sidebar .navbar a span {
+  color: hsl(227deg, 64%, 14%);
+  text-transform: capitalize;
+}
+#sidebar .navbar a:hover {
+  background-color: hsl(227deg, 100%, 91%);
+}
+#sidebar .navbar a:hover i {
+  margin-right: 2.5rem;
+}
+@media (max-width: 450px) {
+  #sidebar {
+    width: 75%;
+  }
+}
+
+/* FOOTER */
+footer {
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 2.5rem 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: hsl(210deg, 29%, 24%);
+  font-size: 2rem;
+  z-index: 500;
+}
+footer span {
+  color: hsl(227deg, 64%, 14%);
+}/*# sourceMappingURL=styles.css.map */

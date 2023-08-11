@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+@import "./variables";
+
+$ff-nunito: 'Nunito', sans-serif;
+
+@each $color,
+$value in $colors {
+  .btn-#{$color} {
+    background-color: $value;
+    color: $white;
+
+    &:hover {
+      border: 1px solid $value;
+      color: $value;
+      background-color: transparent;
+    }
+  }
+}
+
+* {
+  font-family: $ff-nunito;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+
+  &::selection {
+    background-color: $dark-blue;
+    color: $white;
+  }
+
+  &::-webkit-scrollbar {
+    height: .5rem;
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $dark-blue;
+  }
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5% !important;
+  width: 100vw !important;
+}
+
+body {
+  background-color: $light-bg;
+}
+
+section {
+  max-width: 1200px !important;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.btn,
+.option-btn,
+.delete-btn,
+.inline-btn,
+.inline-option-btn,
+.inline-delete-btn {
+  border-radius: .5rem !important;
+  padding: 1rem 3rem !important;
+  font-size: $fs-18  !important;
+  text-transform: capitalize !important;
+  transition: $transition  !important;
+}
+
+.btn,
+.option-btn,
+.delete-btn {
+  display: block;
+  width: 100%;
+}
+
+.inline-btn,
+.inline-option-btn,
+.inline-delete-btn {
+  display: inline-block;
+}
+
+
+/* HEADER */
+
+header {
+  background-color: $white;
+  border: $border;
+  z-index: 500;
+
+  .section-header {
+    padding: 1.5rem 2rem;
+  }
+
+  .logo {
+    font-size: $fs-25;
+    color: $black ;
+    font-weight: bolder;
+  }
+
+  .search-form {
+    width: 50rem;
+    border-radius: .5rem;
+    gap: 2rem;
+    background-color: $light-bg;
+    padding: 1.5rem 2rem;
+
+    input {
+      width: 100%;
+      background: none;
+      font-size: $fs-18;
+      color: $black;
+    }
+
+    button {
+      font-size: $fs-20;
+      color: $black;
+      cursor: pointer;
+      background: none;
+      transition: $transition;
+
+      &:hover {
+        color: $dark-blue;
+      }
+    }
+  }
+
+  .icons div {
+    font-size: $fs-20;
+    color: $black;
+    border-radius: .5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.4rem;
+    background-color: $light-bg;
+    text-align: center;
+    margin-left: .5rem;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
+  }
+
+  #search-btn {
+    display: none;
+  }
+
+
+  .profile {
+    top: 120%;
+    right: 2rem;
+    background-color: $white;
+    border-radius: .5rem;
+    padding: 2rem;
+    width: 30rem;
+    transform: scale(0);
+    transform-origin: top right;
+    transition: .2s linear;
+
+    &.active {
+      transform: scale(1);
+    }
+
+    img {
+      @include profileImage(10rem);
+    }
+
+    h3 {
+      font-size: $fs-20;
+      color: $black;
+    }
+
+    p {
+      font-size: $fs-16;
+      color: $light-color;
+    }
+  }
+
+  @media (max-width: 991px) {
+    html {
+      font-size: 55%;
+    }
+  }
+
+  @media (max-width: 777px) {
+    #search-btn {
+      display: inline-block;
+    }
+
+    .search-form {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      width: auto;
+      border-block: $border;
+      background-color: $white;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: .2s linear;
+
+      &.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+  }
+}
+
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+
+
+/* SIDEBAR */
+
+#sidebar {
+
+  .profile {
+    padding: 3rem 2rem;
+
+    img {
+      @include profileImage(10rem);
+    }
+
+    h3 {
+      font-size: $fs-20;
+      color: $black;
+    }
+
+    p {
+      font-size: $fs-16;
+      color: $light-color;
+    }
+  }
+
+  .navbar {
+    margin-top: 1rem;
+
+    a {
+      display: block;
+      padding: 1.5rem 2.5rem;
+      width: 100%;
+      margin: .5rem 0;
+      border-radius: 5px;
+      font-size: $fs-18;
+
+      i {
+        color: $dark-blue;
+        margin-right: 1.5rem;
+        transition: $transition;
+      }
+
+      span {
+        color: $dark-blue;
+        text-transform: capitalize;
+      }
+
+      &:hover {
+        background-color: $light-bg;
+
+        i {
+          margin-right: 2.5rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    width: 75%;
+  }
+}
+
+
+/* FOOTER */
+
+footer {
+  border-top: $border;
+  background-color: $white;
+  padding: 2.5rem 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: $black;
+  font-size: $fs-20;
+  z-index: 500;
+
+  span {
+    color: $dark-blue;
+  }
+}

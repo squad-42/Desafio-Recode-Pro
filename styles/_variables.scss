@@ -1,0 +1,55 @@
+$dark-blue: hsl(227, 64%, 14%);
+$red: hsl(6, 78%, 57%);
+$orange: hsl(37, 90%, 51%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(210, 29%, 24%);
+$light-color: #888;
+$light-bg: hsl(227, 100%, 91%);
+$border: .1rem solid rgba(0, 0, 0, .2);
+
+$fs-13: 1.3rem;
+$fs-15: 1.5rem;
+$fs-16: 1.6rem;
+$fs-17: 1.7rem;
+$fs-18: 1.8rem;
+$fs-20: 2rem;
+$fs-25: 2.5rem;
+$fs-30: 3rem;
+$fs-32: 3.2rem;
+$fs-40: 4rem;
+
+$fw-200: 200;
+$fw-300: 300;
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+$fw-700: 700;
+
+$transition: .2s ease-out;
+
+$colors: (
+  'dark-blue': $dark-blue,
+  'red': $red,
+  'orange': $orange
+);
+
+@mixin profileImage($size) {
+  height: $size;
+  width: $size;
+  border-radius: 50%;
+  margin-bottom: .5rem;
+}
+
+@mixin box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27.5rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@mixin box {
+  border-radius: .5rem;
+  background-color: $white;
+  padding: 2rem;
+}
