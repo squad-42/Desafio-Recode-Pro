@@ -1,47 +1,85 @@
-export const navbarLinks = [
+export const menuItens = [
   {
-    icone: "",
-    link: "index",
-    texto: "home"
+    icon: "home",
+    label: "Home",
+    link: "home"
   },
   {
-    icone: "",
-    link: "aulas",
-    texto: "aulas"
+    icon: "graduation-cap",
+    label: "Cursos",
+    link: "cursos"
   },
   {
-    icone: "",
-    link: "cursos",
-    texto: "cursos"
+    icon: "chalkboard-user",
+    label: "Professores",
+    link: "aulas"
   },
   {
-    icone: "",
-    link: "info",
-    texto: "info"
+    icon: "headset",
+    label: "Contato",
+    link: "contato"
   },
   {
-    icone: "",
-    link: "usuario",
-    texto: "usuario"
+    icon: "question",
+    label: "Sobre",
+    link: "sobre"
   },
+
 ]
 
-
-export const materias = [
+export const quickOptions = [
   {
-    classe: "Verbo to be",
-    professor: "Severus Snape"
+    title: "Categorias em alta",
+    itens: [
+      {
+        icon: "code",
+        label: "gramática"
+      },
+      {
+        icon: "chart-simple",
+        label: "sintaxe"
+      },
+      {
+        icon: "pen",
+        label: "vocabulário"
+      },
+      {
+        icon: "chart-line",
+        label: "compreensão"
+      },
+      {
+        icon: "music",
+        label: "expressão oral"
+      }
+    ]
   },
   {
-    classe: "Simple Present",
-    professor: "Remo Lupin"
-  },
-  {
-    classe: "Simple Past",
-    professor: "Minerva McGonagall"
-  },
-  {
-    classe: "Simple Future",
-    professor: "Alvo Dumbledore"
+    title: "Tópicos Populares",
+    itens: [
+      {
+        icon: "pencil",
+        label: "verb tenses"
+      },
+      {
+        icon: "pencil-square",
+        label: "verb moodes"
+      },
+      {
+        icon: "user",
+        label: "pronouns"
+      },
+      {
+        icon: "users",
+        label: "conjugation"
+      },
+      {
+        icon: "file-text",
+        label: "articles"
+      },
+      {
+        icon: "child",
+        label: ">adjectives"
+      }
+    ]
   }
 ]
