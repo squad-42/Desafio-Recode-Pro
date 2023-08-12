@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
 .btn-dark-blue {
-  background-color: hsl(227deg, 64%, 14%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: var(--dark-blue);
+  color: var(--white);
 }
 .btn-dark-blue:hover {
-  border: 1px solid hsl(227deg, 64%, 14%);
-  color: hsl(227deg, 64%, 14%);
+  border: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
   background-color: transparent;
 }
 
 .btn-red {
   background-color: hsl(6deg, 78%, 57%);
-  color: hsl(0deg, 0%, 100%);
+  color: var(--white);
 }
 .btn-red:hover {
   border: 1px solid hsl(6deg, 78%, 57%);
@@ -21,12 +21,21 @@
 
 .btn-orange {
   background-color: hsl(37deg, 90%, 51%);
-  color: hsl(0deg, 0%, 100%);
+  color: var(--white);
 }
 .btn-orange:hover {
   border: 1px solid hsl(37deg, 90%, 51%);
   color: hsl(37deg, 90%, 51%);
   background-color: transparent;
+}
+
+:root {
+  --dark-blue: hsl(227, 64%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(210, 29%, 24%);
+  --light-color: hsl(0, 0%, 53%);
+  --light-bg: hsl(227, 100%, 91%);
+  --border: .1rem solid rgba(0, 0, 0, .2);
 }
 
 * {
@@ -36,12 +45,12 @@
   text-decoration: none !important;
 }
 *::-moz-selection {
-  background-color: hsl(227deg, 64%, 14%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: var(--dark-blue);
+  color: var(--white);
 }
 *::selection {
-  background-color: hsl(227deg, 64%, 14%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: var(--dark-blue);
+  color: var(--white);
 }
 *::-webkit-scrollbar {
   height: 0.5rem;
@@ -51,7 +60,7 @@
   background-color: transparent;
 }
 *::-webkit-scrollbar-thumb {
-  background-color: hsl(227deg, 64%, 14%);
+  background-color: var(--dark-blue);
 }
 
 html {
@@ -61,13 +70,34 @@ html {
 }
 
 body {
-  background-color: hsl(227deg, 100%, 91%);
+  background-color: var(--light-bg);
+}
+body.dark {
+  --dark-blue: hsl(227, 100%, 91%);
+  --white: #222;
+  --black: #fff;
+  --light-color: #aaa;
+  --light-bg: #333;
+  --border: .1rem solid rgba(255, 255, 255, .2);
 }
 
 section {
   max-width: 1200px !important;
   padding: 2rem;
   margin: 0 auto;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: var(--black);
+  margin: 2.5rem auto;
+  border-bottom: var(--border);
+  padding-bottom: 1.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  min-width: 235px;
+  max-width: 30%;
+  left: 50%;
 }
 
 .btn,
@@ -98,8 +128,8 @@ section {
 
 /* HEADER */
 header {
-  background-color: hsl(0deg, 0%, 100%);
-  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  background-color: var(--white);
+  border: var(--border);
   z-index: 500;
 }
 header .section-header {
@@ -107,48 +137,48 @@ header .section-header {
 }
 header .logo {
   font-size: 2.5rem;
-  color: hsl(210deg, 29%, 24%);
+  color: var(--black);
   font-weight: bolder;
 }
 header .search-form {
   width: 50rem;
   border-radius: 0.5rem;
   gap: 2rem;
-  background-color: hsl(227deg, 100%, 91%);
+  background-color: var(--light-bg);
   padding: 1.5rem 2rem;
 }
 header .search-form input {
   width: 100%;
   background: none;
   font-size: 1.8rem;
-  color: hsl(210deg, 29%, 24%);
+  color: var(--black);
 }
 header .search-form button {
   font-size: 2rem;
-  color: hsl(210deg, 29%, 24%);
+  color: var(--black);
   cursor: pointer;
   background: none;
   transition: 0.2s ease-out;
 }
 header .search-form button:hover {
-  color: hsl(227deg, 64%, 14%);
+  color: var(--dark-blue);
 }
 header .icons div {
   font-size: 2rem;
-  color: hsl(210deg, 29%, 24%);
+  color: var(--black);
   border-radius: 0.5rem;
   height: 4.5rem;
   width: 4.5rem;
   line-height: 4.4rem;
-  background-color: hsl(227deg, 100%, 91%);
+  background-color: var(--light-bg);
   text-align: center;
   margin-left: 0.5rem;
   cursor: pointer;
   transition: 0.2s ease-out;
 }
 header .icons div:hover {
-  background-color: hsl(210deg, 29%, 24%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: var(--black);
+  color: var(--white);
 }
 header #search-btn {
   display: none;
@@ -156,7 +186,7 @@ header #search-btn {
 header .profile {
   top: 120%;
   right: 2rem;
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: var(--white);
   border-radius: 0.5rem;
   padding: 2rem;
   width: 30rem;
@@ -175,11 +205,11 @@ header .profile img {
 }
 header .profile h3 {
   font-size: 2rem;
-  color: hsl(210deg, 29%, 24%);
+  color: var(--black);
 }
 header .profile p {
   font-size: 1.6rem;
-  color: #888;
+  color: var(--light-color);
 }
 @media (max-width: 991px) {
   header html {
@@ -196,8 +226,8 @@ header .profile p {
     left: 0;
     right: 0;
     width: auto;
-    border-block: 0.1rem solid rgba(0, 0, 0, 0.2);
-    background-color: hsl(0deg, 0%, 100%);
+    border-block: var(--border);
+    background-color: var(--white);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: 0.2s linear;
@@ -225,11 +255,11 @@ header .profile p {
 }
 #sidebar .profile h3 {
   font-size: 2rem;
-  color: hsl(210deg, 29%, 24%);
+  color: var(--black);
 }
 #sidebar .profile p {
   font-size: 1.6rem;
-  color: #888;
+  color: var(--light-color);
 }
 #sidebar .navbar {
   margin-top: 1rem;
@@ -243,16 +273,16 @@ header .profile p {
   font-size: 1.8rem;
 }
 #sidebar .navbar a i {
-  color: hsl(227deg, 64%, 14%);
+  color: var(--dark-blue);
   margin-right: 1.5rem;
   transition: 0.2s ease-out;
 }
 #sidebar .navbar a span {
-  color: hsl(227deg, 64%, 14%);
+  color: var(--dark-blue);
   text-transform: capitalize;
 }
 #sidebar .navbar a:hover {
-  background-color: hsl(227deg, 100%, 91%);
+  background-color: var(--light-bg);
 }
 #sidebar .navbar a:hover i {
   margin-right: 2.5rem;
@@ -265,15 +295,15 @@ header .profile p {
 
 /* FOOTER */
 footer {
-  border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
-  background-color: hsl(0deg, 0%, 100%);
+  border-top: var(--border);
+  background-color: var(--white);
   padding: 2.5rem 2rem;
   margin-top: 2rem;
   text-align: center;
-  color: hsl(210deg, 29%, 24%);
+  color: var(--black);
   font-size: 2rem;
   z-index: 500;
 }
 footer span {
-  color: hsl(227deg, 64%, 14%);
+  color: var(--dark-blue);
 }/*# sourceMappingURL=styles.css.map */

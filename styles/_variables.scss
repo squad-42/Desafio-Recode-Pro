@@ -1,11 +1,5 @@
-$dark-blue: hsl(227, 64%, 14%);
 $red: hsl(6, 78%, 57%);
 $orange: hsl(37, 90%, 51%);
-$white: hsl(0, 0%, 100%);
-$black: hsl(210, 29%, 24%);
-$light-color: #888;
-$light-bg: hsl(227, 100%, 91%);
-$border: .1rem solid rgba(0, 0, 0, .2);
 
 $fs-13: 1.3rem;
 $fs-15: 1.5rem;
@@ -28,7 +22,7 @@ $fw-700: 700;
 $transition: .2s ease-out;
 
 $colors: (
-  'dark-blue': $dark-blue,
+  'dark-blue': var(--dark-blue),
   'red': $red,
   'orange': $orange
 );
@@ -48,8 +42,8 @@ $colors: (
   justify-content: center;
 }
 
-@mixin box {
+@mixin box($bg-color) {
   border-radius: .5rem;
-  background-color: $white;
+  background-color: $bg-color;
   padding: 2rem;
 }
