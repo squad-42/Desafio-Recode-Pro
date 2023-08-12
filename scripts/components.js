@@ -1,3 +1,5 @@
+import { menuItens } from "./data.js"
+
 export const navbar = () => {
   return `
   <section class="d-flex align-items-center justify-content-between position-relative section-header">
@@ -32,4 +34,26 @@ export const navbar = () => {
 
     </section>
  `
+}
+
+export const sidebar = () => {
+  let links = ""
+  menuItens.map(({ icon, label, link }) => {
+    links += `
+  <a href="/pages/${link}/${link === "home" ? "index" : link}.html"><i class="fas fa-${icon}"></i><span>${label}</span></a>
+  `
+  })
+  return `
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar">
+    <div class="profile text-center" id="profile-sidebar">
+      <img src="../../assets/imgs/pic-1.jpg" alt="Foto de Perfil" class="object-fit-cover">
+      <h3 class="name">Harry Potter</h3>
+      <p class="role">Aluno</p>
+      <a href="#" class="btn d-block w-100 btn-dark-blue">Ver perfil</a>
+    </div>
+    <nav class="navbar d-flex flex-column align-items-start justify-content-around ">
+    ${links}
+    </nav>
+  </div>
+  `
 }
