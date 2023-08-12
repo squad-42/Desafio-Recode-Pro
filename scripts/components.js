@@ -3,7 +3,7 @@ export const navbar = () => {
   <section class="d-flex align-items-center justify-content-between position-relative section-header">
 
       <a href="../home/index.html" class="logo">
-        <img src="../../assets/icons/logo-texto.svg" alt="Logotipo" width="80">
+        <img src="../../assets/icons/logo-texto.svg" alt="Logotipo" width="80" id="logo">
       </a>
 
       <form action="" method="post" class="d-flex align-content-center search-form">
@@ -15,7 +15,7 @@ export const navbar = () => {
         <div class="fas fa-bars" id="menu-btn" data-bs-toggle="offcanvas" data-bs-target="#sidebar"></div>
         <div class="fas fa-search" id="search-btn" onclick="toggleSearchForm()"></div>
         <div class="fas fa-user" id="user-btn" onclick="toggleProfile()"></div>
-        <div class="fas fa-sun" id="sun-btn"></div>
+        <div class="fas fa-moon" id="toggle-btn" onclick="switchTheme()"></div>
       </div>
 
 
