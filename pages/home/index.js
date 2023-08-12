@@ -1,22 +1,13 @@
-import { navbar } from "../../scripts/components.js";
-import { courses, menuItens, quickOptions } from "../../scripts/data.js";
+import { navbar, sidebar } from "../../scripts/components.js";
+import { courses, quickOptions } from "../../scripts/data.js";
 
 const header = document.querySelector("header")
-const menu = document.querySelector(".navbar")
+const menu = document.querySelector(".sidebar")
 const quickOptionsSections = document.querySelectorAll(".cards-options")
 const coursesSection = document.querySelector("#courses .box-container")
 
 header.innerHTML = navbar()
-
-/* MENU SIDEBAR */
-menuItens.map(({ icon, label, link }) => {
-  menu.innerHTML += `
-  <a href="/pages/${link}/${link === "home" ? "index" : link}.html"><i class="fas fa-${icon}"></i><span>${label}</span></a>
-  `
-})
-
-
-
+menu.innerHTML = sidebar()
 
 /* OPÇÕES RÁPIDAS CARDS */
 quickOptions.map(({ title, itens }, index) => {
