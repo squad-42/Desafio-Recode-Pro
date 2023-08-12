@@ -1,64 +1,65 @@
-let toggleBtn = document.getElementById('toggle-btn');
-let body = document.body;
-let darkMode = localStorage.getItem('dark-mode');
+import { navbar } from "../../scripts/components.js";
+import { courses, menuItens, quickOptions } from "../../scripts/data.js";
 
-const enableDarkMode = () =>{
-   toggleBtn.classList.replace('fa-sun', 'fa-moon');
-   body.classList.add('dark');
-   localStorage.setItem('dark-mode', 'enabled');
-}
+const header = document.querySelector("header")
+const menu = document.querySelector(".navbar")
+const quickOptionsSections = document.querySelectorAll(".cards-options")
+const coursesSection = document.querySelector("#courses .box-container")
 
-const disableDarkMode = () =>{
-   toggleBtn.classList.replace('fa-moon', 'fa-sun');
-   body.classList.remove('dark');
-   localStorage.setItem('dark-mode', 'disabled');
-}
+header.innerHTML = navbar()
 
-if(darkMode === 'enabled'){
-   enableDarkMode();
-}
+/* MENU SIDEBAR */
+menuItens.map(({ icon, label, link }) => {
+  menu.innerHTML += `
+  <a href="/pages/${link}/${link === "home" ? "index" : link}.html"><i class="fas fa-${icon}"></i><span>${label}</span></a>
+  `
+})
 
-toggleBtn.onclick = (e) =>{
-   darkMode = localStorage.getItem('dark-mode');
-   if(darkMode === 'disabled'){
-      enableDarkMode();
-   }else{
-      disableDarkMode();
-   }
-}
 
-let profile = document.querySelector('.header .flex .profile');
 
-document.querySelector('#user-btn').onclick = () =>{
-   profile.classList.toggle('active');
-   search.classList.remove('active');
-}
 
-let search = document.querySelector('.header .flex .search-form');
+/* OPÇÕES RÁPIDAS CARDS */
+quickOptions.map(({ title, itens }, index) => {
+  let links = "";
 
-document.querySelector('#search-btn').onclick = () =>{
-   search.classList.toggle('active');
-   profile.classList.remove('active');
-}
+  itens.map(({ icon, label }) => {
+    links += `
+    <a href="#"><i class="fas fa-${icon}"></i><span>${label}</span></a>
+    `
+  })
 
-let sideBar = document.querySelector('.side-bar');
+  quickOptionsSections[index].innerHTML += `
+      <div class="box">
+        <h3 class="title">${title}</h3>
+        <div class="flex">
+        ${links}
+        </div>
+      </div>
+`
+})
 
-document.querySelector('#menu-btn').onclick = () =>{
-   sideBar.classList.toggle('active');
-   body.classList.toggle('active');
-}
 
-document.querySelector('#close-btn').onclick = () =>{
-   sideBar.classList.remove('active');
-   body.classList.remove('active');
-}
+courses.sort((a, b) => {
+  return a.course < b.course ? -1 : a.course > b.course ? 1 : 0
+})
 
-window.onscroll = () =>{
-   profile.classList.remove('active');
-   search.classList.remove('active');
+courses.map(({ prof, profPic, date, numOfVid, thumb, course }) => {
+  coursesSection.innerHTML += `
+        <div class="box">
+          <div class="tutor">
+            <img src="/assets/imgs/pic-${profPic}.jpg" alt="">
+            <div class="info">
+              <h3>${prof}</h3>
+              <span>${date}</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <img src="/assets/imgs/thumb-${thumb}.png" alt="">
+            <span>${numOfVid} videos</span>
+          </div>
+          <h3 class="title">${course}</h3>
+          <a href="playlist.html" class="btn btn-dark-blue">ver playslist</a>
+        </div>
+`
+})
 
-   if(window.innerWidth < 1200){
-      sideBar.classList.remove('active');
-      body.classList.remove('active');
-   }
-}

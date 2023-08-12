@@ -1,245 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.png" sizes="32x32" />
-  <title>Bem-vindx!</title>
+  <title>Inglês Transforma</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="stylesheet" href="../../styles/styles.css">
   <link rel="stylesheet" href="./index.css">
 </head>
-<body>
-   <header class="header">
-   
-      <section class="flex">
-   
-         <a href="index.html" class="logo">Inglês Transforma</a>
-         <img src="../../assets/icons/logo.svg" alt="Logotipo" width="80">
-   
-         <form action="search.html" method="post" class="search-form">
-            <input type="text" name="search_box" required placeholder="pesquisar cursos..." maxlength="100">
-            <button type="submit" class="fas fa-search"></button>
-         </form>
-   
-         <div class="icons">
-            <div id="menu-btn" class="fas fa-bars"></div>
-            <div id="search-btn" class="fas fa-search"></div>
-            <div id="user-btn" class="fas fa-user"></div>
-            <div id="toggle-btn" class="fas fa-sun"></div>
-         </div>
-   
-         <div class="profile">
-            <img src="/assets/imgs/pic-1.jpg" class="image" alt="">
-            <h3 class="name">Pedro Pettigrew</h3>
-            <p class="role">Aluno</p>
-            <a href="/pages/usuario/usuario.html" class="btn">Ver perfil</a>
-            <div class="flex-btn">
-               <a href="/pages/login/login.html" class="option-btn">login</a>
-               <a href="register.html" class="option-btn">registro</a>
-            </div>
-         </div>
-   
-      </section>
-   
-   </header>   
-      
-   <section class="home-grid">
 
-      <div class="side-bar">
-   
-         <div id="close-btn">
-            <i class="fas fa-times"></i>
-         </div>
-      
-         <div class="profile">
-            <img src="/assets/imgs/pic-1.jpg" class="image" alt="">
-            <h3 class="name">Pedro Pettigrew</h3>
-            <p class="role">Aluno</p>
-            <a href="profile.html" class="btn">Ver perfil</a>
-         </div>
-      
-         <nav class="navbar">
-            <a href="/pages/home/index.html"><i class="fas fa-home"></i><span>Home</span></a>
-            <a href="/pages/cursos/cursos.html"><i class="fas fa-question"></i><span>Sobre</span></a>
-            <a href="/pages/cursos/cursos.html"><i class="fas fa-graduation-cap"></i><span>Cursos</span></a>
-            <a href="/pages/aulas/aulas.html"><i class="fas fa-chalkboard-user"></i><span>Professores</span></a>
-            <a href="/pages/contato/contato.html"><i class="fas fa-headset"></i><span>Contato</span></a>
-         </nav>
-      
-      </div>
-      
-      <div class="box-container">
-         <h1 class="heading">Bem-vindx!</h1>
+<body class="overflow-x-hidden">
+
+  <header class="position-sticky top-0 start-0 end-0">
+  </header>
+
+
+  <!-- SIDEBAR -->
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar">
+
+    <div class="profile text-center" id="profile-sidebar">
+      <img src="../../assets/imgs/pic-1.jpg" alt="Foto de Perfil" class="object-fit-cover">
+      <h3 class="name">Harry Potter</h3>
+      <p class="role">Aluno</p>
+      <a href="#" class="btn d-block w-100 btn-dark-blue">Ver perfil</a>
+    </div>
+    <nav class="navbar d-flex flex-column align-items-start justify-content-around ">
+    </nav>
+  </div>
+
+  <!-- SIDEBAR -->
+
+  <!-- MAIN -->
+
+  <main class="min-vh-100">
+
+    <div class="container">
+      <div class="hero text-center">
+        <h1 class="hero-title hidden">Bem-vindx!</h1>
       </div>
       <div class="gif">
-         <img src="../../assets/imgs/online.gif" alt="GIF Animado" width="90%">
+        <img src="../../assets/imgs/online.gif" alt="GIF Animado" width="90%">
       </div>
-       
-   
-      <h1 class="heading">Opções Rápidas</h1>
-   
+    </div>
+
+
+    <!-- OPÇÕES RÁPIDAS -->
+    <section class="container" id="quick-options">
+      <h2 class="heading">Opções Rápidas</h2>
+
       <div class="box-container">
-   
-         <div class="box">
-            <h3 class="title">curtidas e comentários</h3>
-            <p class="likes">total de curtidas : <span>25</span></p>
-            <a href="#" class="inline-btn">ver curtidas</a>
-            <p class="likes">total comentários : <span>12</span></p>
-            <a href="#" class="inline-btn">ver comentários</a>
-            <p class="likes">salvar playlists: <span>4</span></p>
-            <a href="#" class="inline-btn">ver playlists</a>
-         </div>
-   
-         <div class="box">
-            <h3 class="title">Categorias em alta</h3>
-            <div class="flex">
-               <a href="#"><i class="fas fa-code"></i><span>gramática</span></a>
-               <a href="#"><i class="fas fa-chart-simple"></i><span>sintaxe</span></a>
-               <a href="#"><i class="fas fa-pen"></i><span>vocabulário</span></a>
-               <a href="#"><i class="fas fa-chart-line"></i><span>compreensão</span></a>
-               <a href="#"><i class="fas fa-music"></i><span>expressão oral</span></a>
-            </div>
-         </div>
-   
-         <div class="box">
-            <h3 class="title">Tópicos Populares</h3>
-            <div class="flex">
-               <a href="#"><i class="fas fa-pencil"></i><span>verb tenses</span></a>
-               <a href="#"><i class="fas fa-pencil-square"></i><span>verb moodes</span></a>
-               <a href="#"><i class="fas fa-user"></i><span>pronouns</span></a>
-               <a href="#"><i class="fas fa-users"></i><span>conjugation</span></a>
-               <a href="#"><i class="fas fa-file-text"></i><span>articles</span></a>
-               <a href="#"><i class="fas fa-child"></i><span>adjectives</span></a>
-            </div>
-         </div>
-   
-         <div class="box">
-            <h3 class="title">Torne-se um tutor</h3>
-            <p class="tutor">Você é apaixonado pelo inglês e deseja fazer a diferença 
-               na vida de outras pessoas? Torne-se um tutor e ajude outros na comunicação em inglês.</p>
-            <a href="teachers.html" class="inline-btn">Iniciar</a>
-         </div>
-   
+        <div class="box">
+          <h3 class="title">Curtidas e Comentários</h3>
+          <p class="likes">Total de curtidas : <span>25</span></p>
+          <a href="#" class="btn btn-dark-blue">ver curtidas</a>
+          <p class="likes">Total comentários : <span>12</span></p>
+          <a href="#" class="btn btn-dark-blue">ver comentários</a>
+          <p class="likes">Salvar playlists: <span>4</span></p>
+          <a href="#" class="btn btn-dark-blue">ver playlists</a>
+        </div>
+
+        <div class="cards-options">
+
+        </div>
+
+        <div class="cards-options">
+
+        </div>
+
+        <div class="box tutor">
+          <h3 class="title">Torne-se um tutor</h3>
+          <p>Você é apaixonado pelo inglês e deseja fazer a diferença
+            na vida de outras pessoas? Torne-se um tutor e ajude outros na comunicação em inglês.</p>
+          <a href="teachers.html" class="btn btn-dark-blue">Iniciar</a>
+        </div>
       </div>
-   
-   </section>
-   
-   
- 
- <section class="courses">
- 
-    <h1 class="heading">Nossos Cursos</h1>
- 
-    <div class="box-container">
- 
-       <div class="box">
-          <div class="tutor">
-             <img src="/assets/imgs/pic-2.jpg" alt="">
-             <div class="info">
-                <h3>Albus Dumbledore</h3>
-                <span>21-07-2023</span>
-             </div>
-          </div>
-          <div class="thumb">
-             <img src="/assets/imgs/thumb-1.png" alt="">
-             <span>10 vídeos</span>
-          </div>
-          <h3 class="title">Inglês Geral</h3>
-          <a href="playlist.html" class="inline-btn">ver playslist</a>
-       </div>
- 
-       <div class="box">
-          <div class="tutor">
-             <img src="/assets/imgs/pic-3.jpg" alt="">
-             <div class="info">
-                <h3>Ron Weasley</h3>
-                <span>11-05-2023</span>
-             </div>
-          </div>
-          <div class="thumb">
-             <img src="/assets/imgs/thumb-2.png" alt="">
-             <span>10 vídeos</span>
-          </div>
-          <h3 class="title">Inglês para Negócios</h3>
-          <a href="playlist.html" class="inline-btn">ver playslistt</a>
-       </div>
- 
-       <div class="box">
-          <div class="tutor">
-             <img src="/assets/imgs/pic-4.jpg" alt="">
-             <div class="info">
-                <h3>Luna Lovegood</h3>
-                <span>05-05-2023</span>
-             </div>
-          </div>
-          <div class="thumb">
-             <img src="/assets/imgs/thumb-3.png" alt="">
-             <span>10 vídeos</span>
-          </div>
-          <h3 class="title">Preparação - Exames de Proficiência</h3>
-          <a href="playlist.html" class="inline-btn">ver playslist</a>
-       </div>
- 
-       <div class="box">
-          <div class="tutor">
-             <img src="/assets/imgs/pic-5.jpg" alt="">
-             <div class="info">
-                <h3>Hermione Granger</h3>
-                <span>07-07-2023</span>
-             </div>
-          </div>
-          <div class="thumb">
-             <img src="/assets/imgs/thumb-4.png" alt="">
-             <span>10 vídeos</span>
-          </div>
-          <h3 class="title">Inglês Acadêmico</h3>
-          <a href="playlist.html" class="inline-btn">ver playslist</a>
-       </div>
- 
-       <div class="box">
-          <div class="tutor">
-             <img src="/assets/imgs/pic-6.jpg" alt="">
-             <div class="info">
-                <h3>Draco Malfoy</h3>
-                <span>27-06-2023</span>
-             </div>
-          </div>
-          <div class="thumb">
-             <img src="/assets/imgs/thumb-5.png" alt="">
-             <span>10 vídeos</span>
-          </div>
-          <h3 class="title">Inglês para viagens</h3>
-          <a href="playlist.html" class="inline-btn">ver playslist</a>
-       </div>
- 
-       <div class="box">
-          <div class="tutor">
-             <img src="/assets/imgs/pic-7.jpg" alt="">
-             <div class="info">
-                <h3>Rúbeo Hagrid</h3>
-                <span>09-06-2023</span>
-             </div>
-          </div>
-          <div class="thumb">
-             <img src="/assets/imgs/thumb-6.png" alt="">
-             <span>10 vídeos</span>
-          </div>
-          <h3 class="title">Inglês Técnico para área de TI</h3>
-          <a href="playlist.html" class="inline-btn">ver playslist</a>
-       </div>
- 
-    </div>
- 
-    <div class="more-btn">
-       <a href="courses.html" class="inline-option-btn">ver todos os cursos</a>
-    </div>
- 
- </section>
- <footer class="footer">
-    &copy; copyright @ 2023 por <span>Squad 42</span> | Todos os direitos reservados!
- </footer>
- <script src="./index.js" type="module"></script>
- <script src="../home/index.js"></script>   
- </body>
- </html>
+    </section>
+    <!-- OPÇÕES RÁPIDAS -->
+
+
+
+    <!-- CURSOS -->
+    <section class="container" id="courses">
+      <h2 class="heading">Nossos Cursos</h2>
+
+      <div class="box-container">
+      </div>
+      <div class="mt-5 d-flex justify-content-center ">
+        <a href="" class="btn btn-dark-blue">Ver mais</a>
+      </div>
+    </section>
+    <!-- CURSOS -->
+
+  </main>
+
+  <!-- MAIN -->
+
+  <!-- FOOTER -->
+
+  <footer class="position-sticky bottom-0 end-0 start-0">
+
+    &copy; 2023. Desenvolvido por <span>Squad 42</span> | Todos os direitos reservados!
+
+  </footer>
+
+  <!-- FOOTER -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="./index.js" type="module"></script>
+  <script src="../../scripts/functions.js" defer></script>
+</body>
+
+</html>
