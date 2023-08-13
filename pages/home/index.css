@@ -1,0 +1,171 @@
+.hero-title {
+  font-weight: bold;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 3.2rem !important;
+  text-align: center;
+  text-shadow: 2px 2px 4px hsl(0deg, 0%, 0%);
+  margin-block: 2%;
+}
+
+.gif {
+  text-align: center;
+}
+.gif img {
+  max-width: 100% !important;
+  -webkit-animation: zoomInAnimation 5s ease;
+          animation: zoomInAnimation 5s ease;
+}
+
+#quick-options .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27.5rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+#quick-options .box-container .box {
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  padding: 2rem;
+}
+#quick-options .box-container .box .title {
+  font-size: 2rem;
+  color: var(--black);
+}
+#quick-options .box-container .box p {
+  line-height: 1.5;
+  padding-top: 1.5rem;
+  font-size: 1.8rem;
+  color: var(--black);
+}
+#quick-options .box-container .box p span {
+  color: var(--dark-blue);
+}
+#quick-options .box-container .tutor {
+  text-align: center;
+}
+#quick-options .box-container .tutor p {
+  padding-bottom: 1rem;
+}
+#quick-options .box-container .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+#quick-options .box-container .flex a {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  background-color: var(--light-bg);
+  transition: 0.2s ease-out;
+}
+#quick-options .box-container .flex a i,
+#quick-options .box-container .flex a span {
+  transition: 0.2s ease-out;
+  color: var(--dark-blue);
+}
+#quick-options .box-container .flex a i {
+  margin-right: 0.5rem;
+}
+#quick-options .box-container .flex a:hover {
+  background-color: var(--dark-blue);
+}
+#quick-options .box-container .flex a:hover i,
+#quick-options .box-container .flex a:hover span {
+  color: var(--white);
+}
+
+#courses .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27.5rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+#courses .box-container .box {
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  padding: 2rem;
+  height: 437px;
+}
+#courses .box-container .box .tutor {
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+#courses .box-container .box .tutor img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+#courses .box-container .box .tutor h3 {
+  font-size: 1.8rem;
+  color: var(--dark-blue);
+  margin-bottom: 0.2rem;
+}
+#courses .box-container .box .tutor span {
+  font-size: 1.3rem;
+  color: var(--black);
+}
+#courses .box-container .box .thumb {
+  position: relative;
+}
+#courses .box-container .box .thumb img {
+  width: 100%;
+  border-radius: 0.5rem;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#courses .box-container .box .thumb span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: var(--white);
+  font-size: 1.5rem;
+}
+#courses .box-container .box .btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#courses .box-container .box .title {
+  font-size: 2rem;
+  color: var(--black);
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+  height: 5.8rem;
+}
+#courses .btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@-webkit-keyframes zoomInAnimation {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomInAnimation {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=index.css.map */
