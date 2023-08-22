@@ -10,22 +10,22 @@
 }
 
 .btn-red {
-  background-color: hsl(6deg, 78%, 57%);
+  background-color: hsl(6, 78%, 57%);
   color: var(--white);
 }
 .btn-red:hover {
-  border: 1px solid hsl(6deg, 78%, 57%);
-  color: hsl(6deg, 78%, 57%);
+  border: 1px solid hsl(6, 78%, 57%);
+  color: hsl(6, 78%, 57%);
   background-color: transparent;
 }
 
 .btn-orange {
-  background-color: hsl(37deg, 90%, 51%);
+  background-color: hsl(37, 90%, 51%);
   color: var(--white);
 }
 .btn-orange:hover {
-  border: 1px solid hsl(37deg, 90%, 51%);
-  color: hsl(37deg, 90%, 51%);
+  border: 1px solid hsl(37, 90%, 51%);
+  color: hsl(37, 90%, 51%);
   background-color: transparent;
 }
 

@@ -1,9 +1,9 @@
 .hero-title {
   font-weight: bold;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   font-size: 3.2rem !important;
   text-align: center;
-  text-shadow: 2px 2px 4px hsl(0deg, 0%, 0%);
+  text-shadow: 2px 2px 4px hsl(0, 0%, 0%);
   margin-block: 2%;
 }
 
@@ -12,8 +12,7 @@
 }
 .gif img {
   max-width: 100% !important;
-  -webkit-animation: zoomInAnimation 5s ease;
-          animation: zoomInAnimation 5s ease;
+  animation: zoomInAnimation 5s ease;
 }
 
 #quick-options .box-container {
@@ -131,7 +130,6 @@
   font-size: 1.5rem;
 }
 #courses .box-container .box .btn {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -143,20 +141,8 @@
   height: 5.8rem;
 }
 #courses .btn {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-}
-
-@-webkit-keyframes zoomInAnimation {
-  from {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
 }
 
 @keyframes zoomInAnimation {

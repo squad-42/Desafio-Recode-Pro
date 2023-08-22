@@ -1,1 +1,143 @@
-@import "../../styles/styles";
+@import "../../styles/variables";
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: var(--white);
+  .col {
+    flex: 1 1 40rem;
+    .save-list button {
+      font-size: $fs-20;
+      border-radius: .5rem;
+      background-color: var(--light-bg);
+      padding: 1.2rem 2.5rem;
+      cursor: pointer;
+      margin-bottom: 2rem;
+      i {
+        color: var(--black);
+        margin-right: 1rem;
+      }
+      span {
+        color: var(--light-color);
+      }
+      &:hover {
+        background-color: var(--black);
+        i {
+          color: var(--white);
+        }
+        span {
+          color: var(--white);
+        }
+      }
+    }
+    .thumb {
+        position: relative;
+        height: 30rem;
+
+        span{
+            position: absolute;
+            top: 1rem; 
+            left: 1rem;
+            border-radius: .5rem;
+            padding: .5rem 1.5rem;
+            font-size: $fs-20;
+            color: white;
+            background-color: rgba(0,0,0,.3);
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 0.5rem;
+            object-fit: cover;
+        }
+
+    }
+    .tutor {
+      display: flex;
+      align-items: center;
+      gap: 1.7rem;
+      img {
+        @include profileImage(7rem);
+      }
+      h3 {
+        font-size: $fs-20;
+        color: var(--black);
+        margin-bottom: 2rem;
+      }
+      span {
+        color: var(--main-color);
+        font-size: $fs-15;
+      }
+    }
+    .details {
+      padding-top: 1.5rem;
+      h3 {
+        font-size: $fs-20;
+        color: var(--black);
+      }
+      p {
+        padding: 1rem 0;
+        line-height: 2;
+        color: var(--light-color);
+        font-size: $fs-17;
+      }
+      .date {
+        font-size: $fs-17;
+        padding-top: 0.5rem;
+        i {
+         color: var(--main-color);
+         margin-right: 1rem;
+        }
+        span {
+          color: var(--light-color);
+        }
+      }
+    }
+  }
+}
+.box-container {
+@include box-container();
+.box{
+    position: relative;
+    border-radius: .5rem;
+    padding: 2rem;
+    background-color: var(--white) ;
+    img {
+      height: 20rem;
+      width: 100%;  
+      border-radius: .5rem;
+      object-fit: cover;
+    }
+    i {
+      position: absolute;  
+      top: 2rem; left: 2rem; right: 2rem;
+      height: 20rem;
+      background-color: rgba(0,0,0,.7) ;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: $fs-40;
+      color: white;
+      border-radius: .5rem;
+    }
+    span {
+        font-size: $fs-15;
+        color: var(--black);
+    }
+    h3 {
+     font-size: $fs-20; 
+     color: var(--black);
+    }
+    &:hover {
+        i {
+            display: flex;
+        }
+        h3 {
+            color: var(--dark-blue);
+        }
+    }
+}
+}

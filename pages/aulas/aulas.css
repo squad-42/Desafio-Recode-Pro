@@ -1,57 +1,149 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;900&display=swap");
-/* CORES */
-/* MAP  DAS CORES */
-/* FONTE */
-/* PESO DA FONTE */
-/* TAMANHO DA FONT */
-:root {
-  /* 1rem = 10px */
-  font-size: 62.5% !important;
-  font-family: "Raleway", sans-serif;
+.row {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: var(--white);
+}
+.row .col {
+  flex: 1 1 40rem;
+}
+.row .col .save-list button {
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--light-bg);
+  padding: 1.2rem 2.5rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.row .col .save-list button i {
+  color: var(--black);
+  margin-right: 1rem;
+}
+.row .col .save-list button span {
+  color: var(--light-color);
+}
+.row .col .save-list button:hover {
+  background-color: var(--black);
+}
+.row .col .save-list button:hover i {
+  color: var(--white);
+}
+.row .col .save-list button:hover span {
+  color: var(--white);
+}
+.row .col .thumb {
+  position: relative;
+  height: 30rem;
+}
+.row .col .thumb span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.row .col .thumb img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.row .col .tutor {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+}
+.row .col .tutor img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+.row .col .tutor h3 {
+  font-size: 2rem;
+  color: var(--black);
+  margin-bottom: 2rem;
+}
+.row .col .tutor span {
+  color: var(--main-color);
+  font-size: 1.5rem;
+}
+.row .col .details {
+  padding-top: 1.5rem;
+}
+.row .col .details h3 {
+  font-size: 2rem;
+  color: var(--black);
+}
+.row .col .details p {
+  padding: 1rem 0;
+  line-height: 2;
+  color: var(--light-color);
+  font-size: 1.7rem;
+}
+.row .col .details .date {
+  font-size: 1.7rem;
+  padding-top: 0.5rem;
+}
+.row .col .details .date i {
+  color: var(--main-color);
+  margin-right: 1rem;
+}
+.row .col .details .date span {
+  color: var(--light-color);
 }
 
-* {
-  font-size: 1.6rem !important;
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27.5rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
 }
-
-.btn-azul-escuro {
-  background-color: hsl(227, 64%, 14%);
-  color: hsl(0, 0%, 100%);
+.box-container .box {
+  position: relative;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  background-color: var(--white);
 }
-.btn-azul-escuro:hover {
-  background-color: hsl(0, 0%, 100%);
-  border-color: hsl(227, 64%, 14%);
-  color: hsl(227, 64%, 14%);
+.box-container .box img {
+  height: 20rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
-.bg-azul-escuro {
-  background-color: hsl(227, 64%, 14%);
+.box-container .box i {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  right: 2rem;
+  height: 20rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: white;
+  border-radius: 0.5rem;
 }
-
-.btn-azul {
-  background-color: hsl(227, 65%, 28%);
-  color: hsl(0, 0%, 100%);
+.box-container .box span {
+  font-size: 1.5rem;
+  color: var(--black);
 }
-.btn-azul:hover {
-  background-color: hsl(0, 0%, 100%);
-  border-color: hsl(227, 65%, 28%);
-  color: hsl(227, 65%, 28%);
+.box-container .box h3 {
+  font-size: 2rem;
+  color: var(--black);
 }
-
-.bg-azul {
-  background-color: hsl(227, 65%, 28%);
+.box-container .box:hover i {
+  display: flex;
 }
-
-.btn-azul-claro {
-  background-color: hsl(227, 100%, 91%);
-  color: hsl(0, 0%, 100%);
-}
-.btn-azul-claro:hover {
-  background-color: hsl(0, 0%, 100%);
-  border-color: hsl(227, 100%, 91%);
-  color: hsl(227, 100%, 91%);
-}
-
-.bg-azul-claro {
-  background-color: hsl(227, 100%, 91%);
+.box-container .box:hover h3 {
+  color: var(--dark-blue);
 }/*# sourceMappingURL=aulas.css.map */

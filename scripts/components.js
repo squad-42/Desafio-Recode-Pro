@@ -57,3 +57,23 @@ export const sidebar = () => {
   </div>
   `
 }
+
+export const cardCurso = ({cod, prof, profPic, date, numOfVid, thumb, course})=> {
+  return `
+  <div class="box">
+  <div class="tutor">
+    <img src="/assets/imgs/pic-${profPic}.jpg" alt="">
+    <div class="info">
+      <h3>${prof}</h3>
+      <span>${date}</span>
+    </div>
+  </div>
+  <div class="thumb">
+    <img src="/assets/imgs/thumb-${thumb}.png" alt="">
+    <span>${numOfVid} videos</span>
+  </div>
+  <h3 class="title">${course}</h3>
+  <a href="../aulas/aulas.html" class="btn btn-dark-blue" onclick="setCurso(${cod})">ver playslist</a>
+</div>
+  `
+}
