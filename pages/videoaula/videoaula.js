@@ -1,14 +1,15 @@
-import { navbar, sidebar } from "../../scripts/components.js"
+import { footerComponent, navbar, sidebar } from "../../scripts/components.js"
 import { comments, courses } from "../../scripts/data.js"
 
 const header = document.querySelector("header")
 const menu = document.querySelector(".sidebar")
+const footer = document.querySelector("footer")
 const player = document.querySelector(".player")
 const countComments = document.querySelector("#count-comments")
 const userComment = document.querySelector("#user-comment")
 const commentsSection = document.querySelector("#comments")
 
-const { name, userPic } = JSON.parse(localStorage.getItem("user"))
+const user = JSON.parse(localStorage.getItem("user"))
 const numClass = localStorage.getItem("class")
 
 
@@ -17,6 +18,7 @@ const { prof, profPic, thumb, date, course } = courses.find((course) => course.c
 
 header.innerHTML = navbar()
 menu.innerHTML = sidebar()
+footer.innerHTML = footerComponent(footer)
 
 player.innerHTML = `
     <div class="video-details">
@@ -45,16 +47,18 @@ player.innerHTML = `
       </div>
 `
 
-countComments.innerText = `${comments.length + 1} comentários`
+countComments.innerText = `${user !== null ? comments.length + 1 : comments.length} comentários`
 
 
-userComment.innerHTML = `
+userComment.innerHTML =
+  user !== null ?
+    `
         <div class="box">
 
           <div class="user">
-            <img src="../../assets/imgs/pic-${userPic}.jpg" alt="">
+            <img src="../../assets/imgs/pic-${user.userPic}.jpg" alt="">
             <div>
-              <h3>${name}</h3>
+              <h3>${user.name}</h3>
               <span>23-08-2023</span>
             </div>
           </div>
@@ -67,6 +71,8 @@ userComment.innerHTML = `
 
 
 `
+    :
+    ``
 
 
 comments.map(({ name, userPic, date, text }) => {

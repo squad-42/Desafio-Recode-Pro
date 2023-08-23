@@ -1,4 +1,4 @@
-import { navbar, sidebar } from "../../scripts/components.js";
+import { footerComponent, navbar, sidebar } from "../../scripts/components.js";
 
 const header = document.querySelector("header")
 const menu = document.querySelector(".sidebar")
@@ -11,10 +11,12 @@ const password = form.querySelector("#password")
 const confPassword = form.querySelector("#confPassword")
 const btnSignUp = form.querySelector("#btnSignUp")
 
+const footer = document.querySelector("footer")
 const users = JSON.parse(localStorage.getItem("users")) || []
 
 header.innerHTML = navbar()
 menu.innerHTML = sidebar()
+footer.innerHTML = footerComponent(footer)
 
 btnSignUp.addEventListener("click", () => {
   if (password.value === confPassword.value) {

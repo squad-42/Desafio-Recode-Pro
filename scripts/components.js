@@ -83,6 +83,18 @@ export const sidebar = () => {
   `
 }
 
+export const footerComponent = (footer) => {
+  footer.classList.add("position-sticky")
+  footer.classList.add("bottom-0")
+  footer.classList.add("end-0")
+  footer.classList.add("start-0")
+  return `
+    <div>
+      &copy; 2023. Desenvolvido por <span>Squad 42</span> | Todos os direitos reservados!
+    </div>
+`
+}
+
 export const cardCurso = ({ cod, prof, profPic, date, numOfVid, thumb, course }) => {
   return `
   <div class="box">

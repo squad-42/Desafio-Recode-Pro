@@ -1,8 +1,9 @@
-import { navbar, sidebar } from "../../scripts/components.js"
+import { footerComponent, navbar, sidebar } from "../../scripts/components.js"
 import { courses } from "../../scripts/data.js"
 
 const header = document.querySelector("header")
 const menu = document.querySelector(".sidebar")
+const footer = document.querySelector("footer")
 const playlistDetails = document.querySelector(".row")
 const videosSection = document.querySelector(".box-container")
 
@@ -12,6 +13,7 @@ const { prof, profPic, thumb, date, course, numOfVid } = courses.find((course) =
 
 header.innerHTML = navbar()
 menu.innerHTML = sidebar()
+footer.innerHTML = footerComponent(footer)
 
 playlistDetails.innerHTML = `
        <div class="col">
