@@ -1,0 +1,50 @@
+@import "../../styles/variables";
+
+.box-container {
+  @include box-container(30rem);
+
+  .box {
+    @include box(var(--white));
+
+    .title {
+      color: var(--black);
+      font-size: $fs-20;
+      margin-bottom: .2rem;
+    }
+
+    .tutor {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+
+      img {
+        @include profileImage(5rem);
+      }
+
+      span {
+        color: var(--dark-blue);
+        font-size: $fs-15;
+      }
+
+    }
+
+    p {
+      font-size: $fs-17;
+      color: var(--light-color);
+
+      span {
+        color: var(--dark-blue);
+      }
+    }
+  }
+
+  .offer {
+    text-align: center;
+
+    p {
+      line-height: 2;
+      padding-bottom: .5rem;
+    }
+  }
+}

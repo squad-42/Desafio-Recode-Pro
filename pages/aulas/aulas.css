@@ -92,7 +92,7 @@
   padding-top: 0.5rem;
 }
 .row .col .details .date i {
-  color: var(--main-color);
+  color: var(--dark-blue);
   margin-right: 1rem;
 }
 .row .col .details .date span {

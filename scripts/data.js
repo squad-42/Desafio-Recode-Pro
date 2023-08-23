@@ -12,7 +12,7 @@ export const menuItens = [
   {
     icon: "chalkboard-user",
     label: "Professores",
-    link: "aulas"
+    link: "professores"
   },
   {
     icon: "headset",
@@ -140,4 +140,43 @@ export const courses = [
     course: "Inglês Técnico para área de TI"
   },
 
+]
+
+export const reviews = [
+  {
+    comment: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, atque adipisci dolorum dolore minima magni.",
+    name: "Cho Chang",
+    userPic: 2,
+    grade: 4.5
+  },
+  {
+    comment: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, atque adipisci dolorum dolore minima magni.",
+    name: "Neville Longbottom",
+    userPic: 3,
+    grade: 5
+  },
+  {
+    comment: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, atque adipisci dolorum dolore minima magni.",
+    name: "Ginevra Molly Weasley",
+    userPic: 7,
+    grade: 4
+  },
+  {
+    comment: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, atque adipisci dolorum dolore minima magni.",
+    name: "Rúbeo Hagrid",
+    userPic: 9,
+    grade: 5
+  },
+  {
+    comment: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, atque adipisci dolorum dolore minima magni.",
+    name: "Cedrico Diggory",
+    userPic: 6,
+    grade: 3.5
+  },
+  {
+    comment: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, atque adipisci dolorum dolore minima magni.",
+    name: "Remo Lupin",
+    userPic: 8,
+    grade: 4
+  },
 ]

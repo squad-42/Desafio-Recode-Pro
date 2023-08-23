@@ -3,7 +3,7 @@
 .hero-title {
   font-weight: bold;
   color: hsl(0deg, 0%, 100%);
-  font-size: $fs-32  !important;
+  font-size: $fs-32 !important;
   text-align: center;
   text-shadow: 2px 2px 4px hsl(0deg, 0%, 0%);
   margin-block: 2%;
@@ -19,7 +19,7 @@
 }
 
 #quick-options .box-container {
-  @include box-container();
+  @include box-container(27.5rem);
 
   .box {
     @include box(var(--white));
@@ -86,7 +86,7 @@
 
 #courses {
   .box-container {
-    @include box-container();
+    @include box-container(27.5rem);
 
     .box {
       @include box(var(--white));
@@ -131,7 +131,7 @@
           border-radius: .5rem;
           padding: .5rem 1.5rem;
           background-color: rgba(0, 0, 0, .3);
-          color: var(--white);
+          color: white;
           font-size: 1.5rem;
         }
       }
