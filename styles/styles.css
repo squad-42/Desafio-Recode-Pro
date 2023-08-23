@@ -71,6 +71,7 @@ html {
 
 body {
   background-color: var(--light-bg);
+  overflow-x: hidden;
 }
 body.dark {
   --dark-blue: hsl(227, 100%, 91%);
@@ -130,6 +131,10 @@ section {
 header {
   background-color: var(--white);
   border: var(--border);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 500;
 }
 header .section-header {

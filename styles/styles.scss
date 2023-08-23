@@ -59,6 +59,7 @@ html {
 
 body {
   background-color: var(--light-bg);
+  overflow-x: hidden;
 
 
   &.dark {
@@ -98,9 +99,9 @@ section {
 .inline-delete-btn {
   border-radius: .5rem !important;
   padding: 1rem 3rem !important;
-  font-size: $fs-18  !important;
+  font-size: $fs-18 !important;
   text-transform: capitalize !important;
-  transition: $transition  !important;
+  transition: $transition !important;
 }
 
 .btn,
@@ -122,6 +123,10 @@ section {
 header {
   background-color: var(--white);
   border: var(--border);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 500;
 
   .section-header {

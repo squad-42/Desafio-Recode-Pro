@@ -1,118 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Contato</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-   <link rel="stylesheet" href="/pages/contato/contato.css">
+   <link rel="stylesheet" href="../../styles/styles.css">
+   <link rel="stylesheet" href="./contato.css">
 </head>
+
 <body>
 
-<header class="header">
-   
-   <section class="flex">
+   <header class="header">
 
-        <a href="index.html" class="logo">Inglês Transforma</a>
-        <img src="../../assets/icons/logo.svg" alt="Logotipo" width="80">
+   </header>
 
-        <form action="search.html" method="post" class="search-form">
-        <input type="text" name="search_box" required placeholder="pesquisar cursos..." maxlength="100">
-        <button type="submit" class="fas fa-search"></button>
-        </form>
+   <div class="sidebar">
 
-        <div class="icons">
-            <div id="menu-btn" class="fas fa-bars"></div>
-            <div id="search-btn" class="fas fa-search"></div>
-            <div id="user-btn" class="fas fa-user"></div>
-            <div id="toggle-btn" class="fas fa-sun"></div>
-        </div>
+   </div>
 
-        <div class="profile">
-            <img src="/assets/imgs/pic-1.jpg" class="image" alt="">
-            <h3 class="name">Pedro Pettigrew</h3>
-            <p class="role">Aluno</p>
-            <a href="/pages/usuario/usuario.html" class="btn">Ver perfil</a>
-            <div class="flex-btn">
-               <a href="/pages/login/login.html" class="option-btn">login</a>
-               <a href="register.html" class="option-btn">registro</a>
-            </div>
+   <section class="contact">
+
+      <div class="row">
+
+         <div class="image">
+            <img src="/assets/imgs/contato.svg" alt="">
          </div>
 
+         <form action="" method="post">
+            <h3>Entrar em contato</h3>
+            <input type="text" placeholder="Digite seu nome" name="name" required maxlength="50" class="box">
+            <input type="email" placeholder="Digite seu email" name="email" required maxlength="50" class="box">
+            <input type="number" placeholder="Digite seu número de telefone" name="tel" required maxlength="50"
+               class="box">
+            <textarea name="msg" class="box" placeholder="Escreva sua mensagem" required maxlength="1000" cols="30"
+               rows="10"></textarea>
+            <input type="submit" value="enviar mensagem" class="btn btn-dark-blue" name="submit">
+         </form>
+
+      </div>
+
+      <div class="box-container">
+
+         <div class="box">
+            <i class="fas fa-phone"></i>
+            <h3>Número de Telefone</h3>
+            <a href="tel:123456789">+55 12345-6789</a>
+         </div>
+
+         <div class="box">
+            <i class="fas fa-envelope"></i>
+            <h3>Endereço de e-mail</h3>
+            <a href="mailto:squad42@gmail.com">squad42@gmail.com</a>
+         </div>
+
+         <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Endereço</h3>
+            <a href="#">Rua do Sucesso, nº 1.234 - Brasil</a>
+         </div>
+
+      </div>
+
    </section>
-
-</header>   
-
-<div class="side-bar">
-
-   <div id="close-btn">
-      <i class="fas fa-times"></i>
-   </div>
-
-   <div class="profile">
-        <img src="/assets/imgs/pic-1.jpg" class="image" alt="">
-        <h3 class="name">Pedro Pettigrew</h3>
-        <p class="role">Aluno</p>
-        <a href="profile.html" class="btn">Ver perfil</a>
-    </div>
-
-   <nav class="navbar">
-        <a href="/pages/home/index.html"><i class="fas fa-home"></i><span>Home</span></a>
-        <a href="/pages/cursos/cursos.html"><i class="fas fa-question"></i><span>Sobre</span></a>
-        <a href="/pages/cursos/cursos.html"><i class="fas fa-graduation-cap"></i><span>Cursos</span></a>
-        <a href="/pages/aulas/aulas.html"><i class="fas fa-chalkboard-user"></i><span>Professores</span></a>
-        <a href="/pages/contato/contato.html"><i class="fas fa-headset"></i><span>Contato</span></a>
-    </nav>
-
-</div>
-
-<section class="contact">
-
-   <div class="row">
-
-      <div class="image">
-         <img src="/assets/imgs/contato.svg" alt="">
-      </div>
-
-      <form action="" method="post">
-         <h3>entrar em contato</h3>
-         <input type="text" placeholder="Digite seu nome" name="name" required maxlength="50" class="box">
-         <input type="email" placeholder="Digite seu email" name="email" required maxlength="50" class="box">
-         <input type="number" placeholder="Digite seu número de telefone" name="tel" required maxlength="50" class="box">
-         <textarea name="msg" class="box" placeholder="Escreva sua mensagem" required maxlength="1000" cols="30" rows="10"></textarea>
-         <input type="submit" value="enviar mensagem" class="inline-btn" name="submit">
-      </form>
-
-   </div>
-
-   <div class="box-container">
-
-      <div class="box">
-         <i class="fas fa-phone"></i>
-         <h3>Número de Telefone</h3>
-         <a href="tel:123456789">+55 12345-6789</a>
-      </div>
-      
-      <div class="box">
-         <i class="fas fa-envelope"></i>
-         <h3>Endereço de e-mail</h3>
-         <a href="mailto:squad42@gmail.com">squad42@gmail.com</a>
-      </div>
-
-      <div class="box">
-         <i class="fas fa-map-marker-alt"></i>
-         <h3>Endereço</h3>
-         <a href="#">Rua do Sucesso, nº 1.234 - Brasil</a>
-      </div>
-
-   </div>
-
-</section>
-<footer class="footer">
-    &copy; copyright @ 2023 por <span>Squad 42</span> | Todos os direitos reservados!
- </footer>
-<script src="./index.js" type="module"></script>
-<script src="../home/index.js"></script>    
+   <footer class="footer">
+      &copy; copyright @ 2023 por <span>Squad 42</span> | Todos os direitos reservados!
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+   <script src="./contato.js" type="module"></script>
+   <script src="../../scripts/functions.js" defer></script>
 </body>
+
 </html>
