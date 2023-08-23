@@ -180,3 +180,24 @@ export const reviews = [
     grade: 4
   },
 ]
+
+export const comments = [
+  {
+    name: "Cho Chang",
+    userPic: 2,
+    date: "18-07-2023",
+    text: "Ótima aula!!!"
+  },
+  {
+    name: "Cedrico Diggory",
+    userPic: 6,
+    date: "25-05-2023",
+    text: "Muito obrigado, por essa aula fantástica."
+  },
+  {
+    name: "Neville Longbottom",
+    userPic: 3,
+    date: "20-08-2023",
+    text: "Excelente didática."
+  },
+]

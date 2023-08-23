@@ -1,10 +1,12 @@
+.heading {
+  max-width: 100%;
+  text-align: start;
+}
+
 .row {
-  display: flex;
-  align-items: center;
-  gap: 2.5rem;
-  flex-wrap: wrap;
-  padding: 2rem;
   background-color: var(--white);
+  align-items: center;
+  padding: 2rem;
 }
 .row .col {
   flex: 1 1 40rem;
@@ -14,15 +16,18 @@
   border-radius: 0.5rem;
   background-color: var(--light-bg);
   padding: 1.2rem 2.5rem;
-  cursor: pointer;
   margin-bottom: 2rem;
+  cursor: pointer;
+  transition: 0.2s ease-out;
 }
 .row .col .save-list button i {
   color: var(--black);
   margin-right: 1rem;
+  transition: 0.2s ease-out;
 }
 .row .col .save-list button span {
   color: var(--light-color);
+  transition: 0.2s ease-out;
 }
 .row .col .save-list button:hover {
   background-color: var(--black);
@@ -44,7 +49,7 @@
   border-radius: 0.5rem;
   padding: 0.5rem 1.5rem;
   font-size: 2rem;
-  color: white;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.3);
 }
 .row .col .thumb img {
@@ -57,7 +62,7 @@
 .row .col .tutor {
   display: flex;
   align-items: center;
-  gap: 1.7rem;
+  gap: 1.5rem;
 }
 .row .col .tutor img {
   height: 7rem;
@@ -68,14 +73,14 @@
 .row .col .tutor h3 {
   font-size: 2rem;
   color: var(--black);
-  margin-bottom: 2rem;
+  margin-bottom: 0.2rem;
 }
 .row .col .tutor span {
-  color: var(--main-color);
+  color: var(--dark-blue);
   font-size: 1.5rem;
 }
 .row .col .details {
-  padding-top: 1.5rem;
+  padding-top: 0.5rem;
 }
 .row .col .details h3 {
   font-size: 2rem;
@@ -89,11 +94,9 @@
 }
 .row .col .details .date {
   font-size: 1.7rem;
-  padding-top: 0.5rem;
 }
 .row .col .details .date i {
   color: var(--dark-blue);
-  margin-right: 1rem;
 }
 .row .col .details .date span {
   color: var(--light-color);
@@ -101,7 +104,7 @@
 
 .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(27.5rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
   align-items: flex-start;
   justify-content: center;
@@ -118,6 +121,7 @@
   border-radius: 0.5rem;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: 1rem;
 }
 .box-container .box i {
   position: absolute;
@@ -125,12 +129,12 @@
   left: 2rem;
   right: 2rem;
   height: 20rem;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
   display: none;
   align-items: center;
   justify-content: center;
   font-size: 4rem;
-  color: white;
+  color: #fff;
   border-radius: 0.5rem;
 }
 .box-container .box span {
@@ -140,6 +144,7 @@
 .box-container .box h3 {
   font-size: 2rem;
   color: var(--black);
+  transition: 0.2s ease-out;
 }
 .box-container .box:hover i {
   display: flex;

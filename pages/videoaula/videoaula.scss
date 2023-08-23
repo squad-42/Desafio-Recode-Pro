@@ -1,0 +1,180 @@
+@import "../../styles/variables";
+
+.video-details {
+  background-color: var(--white);
+  padding: 2rem;
+
+  .video {
+    width: 100%;
+    border-radius: .5rem;
+  }
+
+  .num-class {
+    font-size: $fs-15;
+    color: var(--black);
+  }
+
+  .title {
+    font-size: $fs-20;
+    color: var(--black);
+    padding-block: 1.5rem;
+  }
+
+  .info {
+    display: flex;
+    gap: 2rem;
+    font-size: $fs-16;
+    padding-bottom: 1.5rem;
+    border-bottom: var(--border);
+
+    i {
+      margin-right: 1rem;
+      color: var(--dark-blue);
+    }
+
+    span {
+      color: var(--light-color);
+    }
+  }
+
+  .tutor {
+    padding-block: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    img {
+      @include profileImage(7rem);
+    }
+
+    h3 {
+      font-size: $fs-20;
+      color: var(--black);
+      margin-bottom: .2rem;
+    }
+
+    span {
+      font-size: $fs-15;
+      color: var(--light-color);
+    }
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: space-between;
+
+    a {
+      margin-top: 0;
+      width: fit-content;
+    }
+
+  }
+
+  .description {
+    padding-top: 2rem;
+
+    p {
+      line-height: 2;
+      font-size: $fs-17;
+      color: var(--light-color);
+      white-space: pre-line;
+    }
+  }
+}
+
+.add-comment {
+  background-color: var(--white);
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+
+  textarea {
+    border-radius: .5rem;
+    padding: 1.4rem;
+    width: 100%;
+    height: 25rem;
+    resize: none;
+    font-size: $fs-18;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+  }
+
+  .btn {
+    width: fit-content;
+  }
+}
+
+.show-comments {
+
+  #comments {
+    margin-top: 2rem;
+    display: grid;
+    gap: 2rem;
+
+  }
+
+
+
+  .box {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: .5rem;
+
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+
+      img {
+        @include profileImage(5rem);
+      }
+
+      h3 {
+        font-size: $fs-20;
+        color: var(--black);
+        margin-bottom: .2rem;
+      }
+
+      span {
+        color: var(--light-color);
+        font-size: $fs-15;
+      }
+    }
+  }
+
+  .text {
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding: 1rem 1.5rem;
+    color: var(--black);
+    margin: .5rem 0;
+    position: relative;
+    z-index: 0;
+    white-space: pre-line;
+    font-size: $fs-18;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -1rem;
+      left: 1.5rem;
+      height: 1.2rem;
+      width: 2rem;
+      background-color: var(--light-bg);
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+  }
+
+  .flex-btn {
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+
+    .btn {
+      width: fit-content;
+    }
+  }
+}

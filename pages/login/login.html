@@ -5,41 +5,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="stylesheet" href="../../styles/styles.css">
+  <link rel="stylesheet" href="./login.css">
+  <title>Profile</title>
 </head>
 
 <body>
-
-  <div class="container d-flex flex-column align-items-center ">
-
-    <div class="my-3 d-flex align-items-center" id="login">
-      <img src="../../assets/icons/user.svg" alt="Icone de cadeado" width="20" fill="currentcolor">
-      <input type="text" placeholder="Login" class="form-control" id="input-login" aria-describedby="emailHelp">
-    </div>
-
-    <div class="my-3 d-flex align-items-center" id="password">
-      <img src="../../assets/icons/padlock.svg" alt="Icone de cadeado" width="20" fill="currentcolor">
+  <!-- NAVBAR -->
+  <header>
+  </header>
+  <!-- NAVBAR -->
 
 
-      <input type="password" placeholder="Senha" class="form-control" id="input-senha" aria-describedby="emailHelp">
-    </div>
-
-
-    <div class="botoes d-flex flex-column gap-3" id="btn-div">
-      <a href="../usuario/usuario.html" type="button" class="btn btn-azul-escuro" id="btnAluno">Entrar como aluno</a>
-      <a href="../usuario/usuario.html" type="button" class="btn btn-azul-escuro" id="btnProfessor">Entrar como
-        professor</a>
-    </div>
+  <!-- SIDEBAR -->
+  <div class="sidebar">
 
   </div>
+  <!-- SIDEBAR -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
-  <script src="./scripts/login.js"></script>
+
+  <main>
+    <section class="form-container">
+      <form action="../home/index.html" id="form">
+        <h3>Login</h3>
+        <label>Email</label>
+        <input type="email" placeholder="hp@email.com" maxlength="100" class="box" id="inpEmail" required>
+        <label>Senha</label>
+        <input type="password" placeholder="Digite sua nova senha" maxlength="50" class="box" id="inpPassword" required>
+        <button type="submit" class="btn btn-dark-blue" id="btnLogin">Login</button>
+      </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+    <script src="./login.js" type="module"></script>
+    <script src="../../scripts/functions.js" defer></script>
 </body>
 
 </html>

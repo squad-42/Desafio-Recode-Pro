@@ -28,8 +28,8 @@ const toggleSearchForm = () => {
   profile.classList.remove("active")
 }
 
-const setCourse = (cod) => {
-  localStorage.setItem("codCourse", cod);
+const setCurso = (cod) => {
+  localStorage.setItem("codCurso", cod);
 }
 
 const setClass = (numOfClass) => {

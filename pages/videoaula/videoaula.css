@@ -1,0 +1,156 @@
+.video-details {
+  background-color: var(--white);
+  padding: 2rem;
+}
+.video-details .video {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.video-details .num-class {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+.video-details .title {
+  font-size: 2rem;
+  color: var(--black);
+  padding-block: 1.5rem;
+}
+.video-details .info {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.6rem;
+  padding-bottom: 1.5rem;
+  border-bottom: var(--border);
+}
+.video-details .info i {
+  margin-right: 1rem;
+  color: var(--dark-blue);
+}
+.video-details .info span {
+  color: var(--light-color);
+}
+.video-details .tutor {
+  padding-block: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.video-details .tutor img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+.video-details .tutor h3 {
+  font-size: 2rem;
+  color: var(--black);
+  margin-bottom: 0.2rem;
+}
+.video-details .tutor span {
+  font-size: 1.5rem;
+  color: var(--light-color);
+}
+.video-details form {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+.video-details form a {
+  margin-top: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.video-details .description {
+  padding-top: 2rem;
+}
+.video-details .description p {
+  line-height: 2;
+  font-size: 1.7rem;
+  color: var(--light-color);
+  white-space: pre-line;
+}
+
+.add-comment {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+.add-comment textarea {
+  border-radius: 0.5rem;
+  padding: 1.4rem;
+  width: 100%;
+  height: 25rem;
+  resize: none;
+  font-size: 1.8rem;
+  color: var(--black);
+  margin-bottom: 1.5rem;
+}
+.add-comment .btn {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.show-comments #comments {
+  margin-top: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+.show-comments .box {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.show-comments .box .user {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.show-comments .box .user img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+.show-comments .box .user h3 {
+  font-size: 2rem;
+  color: var(--black);
+  margin-bottom: 0.2rem;
+}
+.show-comments .box .user span {
+  color: var(--light-color);
+  font-size: 1.5rem;
+}
+.show-comments .text {
+  border-radius: 0.5rem;
+  background-color: var(--light-bg);
+  padding: 1rem 1.5rem;
+  color: var(--black);
+  margin: 0.5rem 0;
+  position: relative;
+  z-index: 0;
+  white-space: pre-line;
+  font-size: 1.8rem;
+}
+.show-comments .text::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: 1.5rem;
+  height: 1.2rem;
+  width: 2rem;
+  background-color: var(--light-bg);
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.show-comments .flex-btn {
+  display: flex;
+  margin-top: 1.5rem;
+  gap: 1.5rem;
+}
+.show-comments .flex-btn .btn {
+  width: -moz-fit-content;
+  width: fit-content;
+}/*# sourceMappingURL=videoaula.css.map */

@@ -1,12 +1,16 @@
 @import "../../styles/variables";
 
+
+.heading {
+  max-width: 100%;
+  text-align: start;
+}
+
 .row {
-  display: flex;
-  align-items: center;
-  gap: 2.5rem;
-  flex-wrap: wrap;
-  padding: 2rem;
   background-color: var(--white);
+  align-items: center;
+  padding: 2rem;
+
 
   .col {
     flex: 1 1 40rem;
@@ -16,16 +20,19 @@
       border-radius: .5rem;
       background-color: var(--light-bg);
       padding: 1.2rem 2.5rem;
-      cursor: pointer;
       margin-bottom: 2rem;
+      cursor: pointer;
+      transition: $transition;
 
       i {
         color: var(--black);
         margin-right: 1rem;
+        transition: $transition;
       }
 
       span {
         color: var(--light-color);
+        transition: $transition;
       }
 
       &:hover {
@@ -41,6 +48,8 @@
       }
     }
 
+
+
     .thumb {
       position: relative;
       height: 30rem;
@@ -52,23 +61,22 @@
         border-radius: .5rem;
         padding: .5rem 1.5rem;
         font-size: $fs-20;
-        color: white;
+        color: #fff;
         background-color: rgba(0, 0, 0, .3);
       }
 
       img {
         width: 100%;
         height: 100%;
-        border-radius: 0.5rem;
+        border-radius: .5rem;
         object-fit: cover;
       }
-
     }
 
     .tutor {
       display: flex;
       align-items: center;
-      gap: 1.7rem;
+      gap: 1.5rem;
 
       img {
         @include profileImage(7rem);
@@ -77,17 +85,18 @@
       h3 {
         font-size: $fs-20;
         color: var(--black);
-        margin-bottom: 2rem;
+        margin-bottom: .2rem;
       }
 
       span {
-        color: var(--main-color);
+        color: var(--dark-blue);
         font-size: $fs-15;
       }
     }
 
+
     .details {
-      padding-top: 1.5rem;
+      padding-top: .5rem;
 
       h3 {
         font-size: $fs-20;
@@ -103,11 +112,9 @@
 
       .date {
         font-size: $fs-17;
-        padding-top: 0.5rem;
 
         i {
           color: var(--dark-blue);
-          margin-right: 1rem;
         }
 
         span {
@@ -119,7 +126,7 @@
 }
 
 .box-container {
-  @include box-container(27.5rem);
+  @include box-container(30rem);
 
   .box {
     position: relative;
@@ -132,6 +139,7 @@
       width: 100%;
       border-radius: .5rem;
       object-fit: cover;
+      margin-bottom: 1rem;
     }
 
     i {
@@ -140,12 +148,12 @@
       left: 2rem;
       right: 2rem;
       height: 20rem;
-      background-color: rgba(0, 0, 0, .7);
+      background-color: rgba(0, 0, 0, .3);
       display: none;
       align-items: center;
       justify-content: center;
       font-size: $fs-40;
-      color: white;
+      color: #fff;
       border-radius: .5rem;
     }
 
@@ -157,6 +165,7 @@
     h3 {
       font-size: $fs-20;
       color: var(--black);
+      transition: $transition;
     }
 
     &:hover {
@@ -169,4 +178,5 @@
       }
     }
   }
+
 }

@@ -9,8 +9,8 @@
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
   <link rel="stylesheet" href="../../styles/styles.css">
-  <link rel="stylesheet" href="./aulas.css">
-  <title>Aulas</title>
+  <link rel="stylesheet" href="./videoaula.css">
+  <title>Aula</title>
 </head>
 
 <body>
@@ -24,34 +24,46 @@
     </div>
     <!-- SIDEBAR -->
 
-    <!-- PLAYLIST -->
-
-    <section class="playlist">
-      <h1 class="heading">Detalhes da playlist</h1>
-
-      <!-- PLAYLIST DETAILS -->
-      <div class="row">
-      </div>
-      <!-- PLAYLIST DETAILS -->
-
+    <!-- PLAYER -->
+    <section class="player">
 
     </section>
-    <!-- VIDEOS SECTION-->
-    <section class="video-container">
-      <h2 class="heading">Playlist</h2>
+    <!-- PLAYER -->
 
-      <div class="box-container">
+    <!-- COMENTARIOS -->
+    <section>
+
+      <h1 class="heading">Deixe seu comentário</h1>
+
+      <form action="" class="add-comment">
+        <textarea cols="30" rows="10" required placeholder="Comentário" maxlength="1000"></textarea>
+        <input type="submit" value="Comentar" class="btn btn-dark-blue">
+      </form>
+
+
+      <h1 class="heading" id="count-comments"></h1>
+
+      <div class="show-comments">
+
+        <div id="user-comment">
+
+        </div>
+
+        <div id="comments">
+
+        </div>
+
       </div>
     </section>
-    <!-- VIDEOS SECTION-->
+
+    <!-- COMENTARIOS -->
   </main>
-
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
-  <script src="./aulas.js" type="module"></script>
+  <script src="./videoaula.js" type="module"></script>
   <script src="../../scripts/functions.js" defer></script>
 </body>
 
