@@ -3,34 +3,32 @@ import { menuItens } from "./data.js"
 
 const user = JSON.parse(localStorage.getItem("user"))
 
-/* console.log(JSON.parse(localStorage.getItem("users"))) */
+console.log(JSON.parse(localStorage.getItem("users")))
 
 console.log(user)
 
-const profile = (user) => {
+const profile = (user, location) => {
   return user !== null ?
     `
-  <div class="profile position-absolute text-center" id="profile-modal">
     <img src="../../assets/imgs/pic-${user.userPic}.jpg" alt="Foto de Perfil" class="object-fit-cover">
     <h3 class="name">${user.name}</h3>
     <p class="role">${user.type}</p>
     <a href="../profile/profile.html" class="btn d-block w-100 btn-dark-blue">Ver perfil</a>
-    <div class="d-flex gap-3 mt-3">
-      <a href="../home/index.html" class="btn btn-orange" onclick="logout()">Logout</a>
-    </div>
-  </div>
+    ${location === "header" ? `
+        <div class="d-flex gap-3 mt-3">
+          <a href="../home/index.html" class="btn btn-orange" onclick="logout()">Logout</a>
+        </div>      
+      ` : ``
+    }
 `
     :
     `
-  <div class="profile position-absolute text-center" id="profile-modal">
     <h3 class="name">Por favor logar ou registrar</h3>
     <div class="d-flex gap-3 mt-3">
       <a href="../login/login.html" class="btn btn-orange">Login</a>
       <a href="../cadastro/cadastro.html" class="btn btn-orange">Registrar</a>
     </div>
-  </div>
 `
-
 }
 
 
@@ -54,9 +52,9 @@ export const navbar = () => {
         <div class="fas fa-moon" id="toggle-btn" onclick="switchTheme()"></div>
       </div>
 
-
-      ${profile(user)}
-
+      <div class="profile position-absolute text-center" id="profile-modal">
+        ${profile(user, "header")}
+      </div>
     </section>
  `
 }
@@ -68,13 +66,15 @@ export const sidebar = () => {
   <a href="/pages/${link}/${link === "home" ? "index" : link}.html"><i class="fas fa-${icon}"></i><span>${label}</span></a>
   `
   })
+  if (user !== null) {
+    links += `
+  <a href="/pages/home/index.html" onclick="logout()"><i class="fas fa-right-from-bracket"></i></i><span>Logout</span></a>
+`
+  }
   return `
   <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar">
     <div class="profile text-center" id="profile-sidebar">
-      <img src="../../assets/imgs/pic-1.jpg" alt="Foto de Perfil" class="object-fit-cover">
-      <h3 class="name">Harry Potter</h3>
-      <p class="role">Aluno</p>
-      <a href="#" class="btn d-block w-100 btn-dark-blue">Ver perfil</a>
+      ${profile(user, "sidebar")}
     </div>
     <nav class="navbar d-flex flex-column align-items-start justify-content-around ">
     ${links}
