@@ -1,0 +1,109 @@
+.details {
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  padding: 2rem;
+  text-align: center;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.details .tutor {
+  margin-bottom: 2rem;
+}
+.details .tutor img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+.details .tutor h3 {
+  font-size: 2rem;
+  color: var(--black);
+  margin: 0.5rem 0;
+}
+.details .tutor span {
+  font-size: 1.5rem;
+  color: var(--light-color);
+}
+.details .flex {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.details .flex p {
+  flex: 1 1 25rem;
+  border-radius: 0.5rem;
+  background-color: var(--light-bg);
+  padding: 1rem 3rem;
+  color: var(--black);
+  font-size: 2rem;
+}
+.details .flex p span {
+  color: var(--dark-blue);
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27.5rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+.box-container .box {
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  padding: 2rem;
+  width: 27.5rem;
+}
+.box-container .box .tutor {
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.box-container .box .tutor img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+.box-container .box .tutor h3 {
+  font-size: 1.8rem;
+  color: var(--dark-blue);
+  margin-bottom: 0.2rem;
+}
+.box-container .box .tutor span {
+  font-size: 1.3rem;
+  color: var(--black);
+}
+.box-container .box .thumb {
+  position: relative;
+}
+.box-container .box .thumb img {
+  width: 100%;
+  border-radius: 0.5rem;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.box-container .box .thumb span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 1.5rem;
+}
+.box-container .box .btn {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.box-container .box .title {
+  font-size: 2rem;
+  color: var(--black);
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+  height: 5.8rem;
+}/*# sourceMappingURL=professor.css.map */

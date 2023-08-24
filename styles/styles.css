@@ -69,6 +69,10 @@ html {
   width: 100vw !important;
 }
 
+main {
+  min-height: 100vh;
+}
+
 body {
   background-color: var(--light-bg);
   overflow-x: hidden;

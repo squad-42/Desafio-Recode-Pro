@@ -24,7 +24,7 @@ courses.map(({ cod, prof, profPic, numOfVid }) => {
           <div class="stats">
             <p>Playlist: <span>1</span></p>
             <p>Nº de vídeos: <span>${numOfVid}</span></p>
-            <a href="../teachers-profile/teachers-profile.html" class="btn btn-dark-blue" onclick="setCourse(${cod})">Ver perfil</a>
+            <a href="../professor/professor.html" class="btn btn-dark-blue" onclick="setCurso(${cod})">Ver perfil</a>
           </div>
         </div>
   `

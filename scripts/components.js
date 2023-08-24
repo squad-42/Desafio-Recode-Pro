@@ -1,9 +1,9 @@
 import { menuItens } from "./data.js"
 
 
-const user = JSON.parse(localStorage.getItem("user"))
+export const user = JSON.parse(localStorage.getItem("user"))
 
-console.log(JSON.parse(localStorage.getItem("users")))
+/* console.log(JSON.parse(localStorage.getItem("users"))) */
 
 console.log(user)
 
@@ -13,16 +13,14 @@ const profile = (user, location) => {
     <img src="../../assets/imgs/pic-${user.userPic}.jpg" alt="Foto de Perfil" class="object-fit-cover">
     <h3 class="name">${user.name}</h3>
     <p class="role">${user.type}</p>
-    <a href="../profile/profile.html" class="btn d-block w-100 btn-dark-blue">Ver perfil</a>
+    <a href="../usuario/usuario.html" class="btn d-block w-100 btn-dark-blue">Ver perfil</a>
     ${location === "header" ? `
         <div class="d-flex gap-3 mt-3">
           <a href="../home/index.html" class="btn btn-orange" onclick="logout()">Logout</a>
         </div>      
       ` : ``
     }
-`
-    :
-    `
+` : `
     <h3 class="name">Por favor logar ou registrar</h3>
     <div class="d-flex gap-3 mt-3">
       <a href="../login/login.html" class="btn btn-orange">Login</a>

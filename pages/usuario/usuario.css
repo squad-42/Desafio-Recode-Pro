@@ -1,91 +1,140 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;900&display=swap");
-/* CORES */
-/* MAP  DAS CORES */
-/* FONTE */
-/* PESO DA FONTE */
-/* TAMANHO DA FONT */
-:root {
-  /* 1rem = 10px */
-  font-size: 62.5% !important;
-  font-family: "Raleway", sans-serif;
+.details {
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  padding: 2rem;
 }
-
-* {
-  font-size: 1.6rem !important;
+.details a {
+  width: -moz-fit-content;
+  width: fit-content;
 }
-
-.btn-azul-escuro {
-  background-color: hsl(227, 64%, 14%);
-  color: hsl(0, 0%, 100%);
+.details .user {
+  text-align: center;
+  margin-bottom: 2rem;
 }
-.btn-azul-escuro:hover {
-  background-color: hsl(0, 0%, 100%);
-  border-color: hsl(227, 64%, 14%);
-  color: hsl(227, 64%, 14%);
-}
-
-.bg-azul-escuro {
-  background-color: hsl(227, 64%, 14%);
-}
-
-.btn-azul {
-  background-color: hsl(227, 65%, 28%);
-  color: hsl(0, 0%, 100%);
-}
-.btn-azul:hover {
-  background-color: hsl(0, 0%, 100%);
-  border-color: hsl(227, 65%, 28%);
-  color: hsl(227, 65%, 28%);
-}
-
-.bg-azul {
-  background-color: hsl(227, 65%, 28%);
-}
-
-.btn-azul-claro {
-  background-color: hsl(227, 100%, 91%);
-  color: hsl(0, 0%, 100%);
-}
-.btn-azul-claro:hover {
-  background-color: hsl(0, 0%, 100%);
-  border-color: hsl(227, 100%, 91%);
-  color: hsl(227, 100%, 91%);
-}
-
-.bg-azul-claro {
-  background-color: hsl(227, 100%, 91%);
-}
-
-#user-bio {
-  color: hsl(227, 64%, 14%);
-}
-#user-bio #user-picture {
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
+.details .user img {
+  height: 10rem;
+  width: 10rem;
   border-radius: 50%;
+  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
-#user-bio p {
-  margin: 0;
-  font-size: 1.6rem !important;
+.details .user h3 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  color: var(--black);
+}
+.details .user p {
+  font-size: 1.7rem;
+  color: var(--light-color);
+  margin-bottom: 0.5rem;
+}
+.details .user a {
+  margin-inline: auto;
+}
+.details .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+.details .box-container .box {
+  background-color: var(--light-bg);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  flex: 1 1 30rem;
+}
+.details .box-container .box .flex {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+.details .box-container .box .flex i {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--black);
+  line-height: 4.4rem;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--white);
+}
+.details .box-container .box .flex h3 {
+  font-size: 2rem;
+  color: var(--dark-blue);
+  margin-bottom: 0.2rem;
+}
+.details .box-container .box .flex span {
+  font-size: 1.5rem;
+  color: var(--light-color);
 }
 
-#user-cards {
-  color: hsl(0, 0%, 100%);
+#courses .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27.5rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
 }
-#user-cards .card-description {
-  flex-grow: 4;
+#courses .box-container .box {
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  padding: 2rem;
+  height: 437px;
 }
-#user-cards .card-description h3 {
-  font-size: 1.6rem !important;
-  font-weight: 400;
+#courses .box-container .box .tutor {
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
-#user-cards .card-description .professor {
-  font-size: 1.2rem !important;
+#courses .box-container .box .tutor img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
 }
-#user-cards .lesson-card:nth-child(odd) {
-  background-color: hsl(227, 64%, 14%);
+#courses .box-container .box .tutor h3 {
+  font-size: 1.8rem;
+  color: var(--dark-blue);
+  margin-bottom: 0.2rem;
 }
-#user-cards .lesson-card:nth-child(even) {
-  background-color: hsl(227, 65%, 28%);
+#courses .box-container .box .tutor span {
+  font-size: 1.3rem;
+  color: var(--black);
+}
+#courses .box-container .box .thumb {
+  position: relative;
+}
+#courses .box-container .box .thumb img {
+  width: 100%;
+  border-radius: 0.5rem;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#courses .box-container .box .thumb span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 1.5rem;
+}
+#courses .box-container .box .btn {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#courses .box-container .box .title {
+  font-size: 2rem;
+  color: var(--black);
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+  height: 5.8rem;
+}
+#courses .btn {
+  width: -moz-fit-content;
+  width: fit-content;
 }/*# sourceMappingURL=usuario.css.map */

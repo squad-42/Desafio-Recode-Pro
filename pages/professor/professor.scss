@@ -1,0 +1,112 @@
+@import "../../styles/variables";
+
+.details {
+  @include box(var(--white));
+  text-align: center;
+  max-width: 1200px;
+  margin-inline: auto;
+
+  .tutor {
+    margin-bottom: 2rem;
+
+    img {
+      @include profileImage(10rem);
+    }
+
+    h3 {
+      font-size: $fs-20;
+      color: var(--black);
+      margin: .5rem 0;
+    }
+
+    span {
+      font-size: $fs-15;
+      color: var(--light-color);
+    }
+  }
+
+  .flex {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+    p {
+      flex: 1 1 25rem;
+      border-radius: .5rem;
+      background-color: var(--light-bg);
+      padding: 1rem 3rem;
+      color: var(--black);
+      font-size: $fs-20;
+
+      span {
+        color: var(--dark-blue);
+      }
+    }
+  }
+}
+
+.box-container {
+  @include box-container(27.5rem);
+
+  .box {
+    @include box(var(--white));
+    width: 27.5rem;
+
+    .tutor {
+      margin-bottom: 2.5rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      img {
+        @include profileImage(5rem);
+      }
+
+      h3 {
+        font-size: $fs-18;
+        color: var(--dark-blue);
+        margin-bottom: .2rem;
+      }
+
+      span {
+        font-size: $fs-13;
+        color: var(--black);
+      }
+    }
+
+    .thumb {
+      position: relative;
+
+      img {
+        width: 100%;
+        border-radius: .5rem;
+        height: 20rem;
+        object-fit: cover;
+      }
+
+      span {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        border-radius: .5rem;
+        padding: .5rem 1.5rem;
+        background-color: rgba(0, 0, 0, .3);
+        color: #fff;
+        font-size: 1.5rem;
+      }
+    }
+
+    .btn {
+      width: fit-content;
+    }
+
+    .title {
+      font-size: $fs-20;
+      color: var(--black);
+      margin-top: .5rem;
+      padding: .5rem 0;
+      height: 5.8rem;
+    }
+  }
+}
