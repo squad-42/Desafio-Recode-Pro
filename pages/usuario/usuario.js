@@ -32,7 +32,7 @@ profileDetails.innerHTML = `
               <i class="fas fa-bookmark"></i>
               <div>
                 <h3>${type === "professor" ? 2 : 3}</h3>
-                <span>Playlist ${type === "professor" ? "criadas" : ""}</span>
+                <span>Playlist ${type === "professor" ? "criadas" : "salvas"}</span>
               </div>
             </div>
           </div>

@@ -2,6 +2,9 @@ import { menuItens } from "./data.js"
 
 export const user = JSON.parse(localStorage.getItem("user"))
 
+const users = JSON.parse(localStorage.getItem("users"))
+
+console.log(users)
 console.log(user)
 
 const profile = (user, location) => {
