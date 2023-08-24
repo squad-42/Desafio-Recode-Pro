@@ -38,7 +38,7 @@ player.innerHTML = `
           </div>
         </div>
         <form action="">
-          <a href="../playlist/playlist.html" class="btn btn-dark-blue">Ver playlist</a>
+          <a href="../cursos/cursos.html" class="btn btn-dark-blue">Ver playlist</a>
         </form>
         <div class="description">
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem harum unde voluptate enim quis asperiores
