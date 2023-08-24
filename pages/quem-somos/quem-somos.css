@@ -1,0 +1,84 @@
+p {
+  text-align: justify;
+  text-indent: 0.5em;
+}
+
+.main {
+  width: 100%;
+  min-height: 550px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.main:hover .service {
+  transform: translateY(-50px);
+}
+.main:hover .sombra1 {
+  transform: translateY(-25px);
+}
+
+.service {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0 0 50px -15px black;
+  z-index: 1;
+  transition: transform 0.7s;
+}
+
+.service-logo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 10px solid hsl(227, 56%, 66%);
+  margin: -90px auto 0;
+  background: white;
+}
+.service-logo img {
+  width: 70px;
+  margin-top: 25px;
+}
+
+.service h4 {
+  height: 35px;
+  width: 80%;
+  background: white;
+  margin: 50px auto;
+  position: relative;
+}
+.service h4::after {
+  content: "";
+  width: 40px;
+  height: 30px;
+  background: linear-gradient(to right, white, #d2bef8);
+  position: absolute;
+  height: -5px;
+  top: -5px;
+  z-index: -1;
+}
+
+.sombra1 {
+  height: 200px;
+  width: 80%;
+  background: white;
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0;
+  left: 10%;
+  z-index: -1;
+  box-shadow: 0 0 20px -15px black;
+  transition: transform 0.7s;
+}
+
+.sombra2 {
+  height: 200px;
+  width: 64%;
+  background: white;
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0;
+  left: 18%;
+  z-index: -2;
+}/*# sourceMappingURL=quem-somos.css.map */
