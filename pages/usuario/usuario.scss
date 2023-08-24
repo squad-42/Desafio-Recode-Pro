@@ -142,6 +142,16 @@
         padding: .5rem 0;
         height: 5.8rem;
       }
+
+      .flex {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+
+        .btn {
+          width: 100%;
+        }
+      }
     }
   }
 
