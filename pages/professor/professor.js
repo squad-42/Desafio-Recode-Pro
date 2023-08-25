@@ -30,7 +30,7 @@ profile.innerHTML = `
 coursesSection.innerHTML = `
         <div class="box">
           <div class="thumb">
-            <img src="/assets/imgs/thumb-${thumb}.png" alt="">
+            <img src="../../assets/imgs/thumb-${thumb}.png" alt="">
             <span>${numOfVid} videos</span>
           </div>
           <h3 class="title">${course}</h3>
