@@ -77,7 +77,7 @@ const cardCursoProf = ({ numOfVid, course, thumb }) => {
         <a href="" class="btn btn-orange">Editar</a>
         <a href="" class="btn btn-red">Deletar</a>
       </div>
-      <a href="" class="btn btn-dark-blue" style="width: 100%;">Ver playlist</a>
+      <a href="../aulas/aulas.html" class="btn btn-dark-blue" style="width: 100%;">Ver playlist</a>
     </div>
   `
 }
