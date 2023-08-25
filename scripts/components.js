@@ -61,12 +61,12 @@ export const sidebar = () => {
   let links = ""
   menuItens.map(({ icon, label, link }) => {
     links += `
-  <a href="/pages/${link}/${link === "home" ? "index" : link}.html"><i class="fas fa-${icon}"></i><span>${label}</span></a>
+  <a href="../${link}/${link === "home" ? "index" : link}.html"><i class="fas fa-${icon}"></i><span>${label}</span></a>
   `
   })
   if (user !== null) {
     links += `
-  <a href="/pages/home/index.html" onclick="logout()"><i class="fas fa-right-from-bracket"></i></i><span>Logout</span></a>
+  <a href="../home/index.html" onclick="logout()"><i class="fas fa-right-from-bracket"></i></i><span>Logout</span></a>
 `
   }
   return `
