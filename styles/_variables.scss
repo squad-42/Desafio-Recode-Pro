@@ -47,3 +47,14 @@ $colors: (
   background-color: $bg-color;
   padding: 2rem;
 }
+
+@mixin sombra($width, $left, $z-index) {
+  height: 200px;
+  width: $width;
+  background: white;
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0;
+  left: $left;
+  z-index: $z-index;
+}
